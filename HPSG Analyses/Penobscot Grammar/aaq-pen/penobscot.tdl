@@ -1,0 +1,775 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Grammar of Penobscot
+;;; created at:
+;;;     Thu May 02 03:23:28 UTC 2013
+;;; based on Matrix customization system version of:
+;;;     Fri Apr 26 22:56:20 UTC 2013
+;;;
+;;; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; Type assigning empty mod list. Added to basic types for nouns, verbs and determiners.
+
+non-mod-lex-item := lex-item &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD < > ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Matrix Type Addenda
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+head :+ [ NEGATED luk ].
+
+synsem :+ [ NEG-SAT luk ].
+
+basic-verb-lex :+ [ SYNSEM.NEG-SAT na-or-+ ].
+
+basic-head-comp-phrase :+ [ SYNSEM [ NEG-SAT #ns,
+             LOCAL.CAT.MC #mc ],
+    HEAD-DTR.SYNSEM [ NEG-SAT #ns,
+                      LOCAL.CAT.MC #mc ] ].
+
+basic-head-subj-phrase :+ [ SYNSEM.NEG-SAT #ns,
+    HEAD-DTR.SYNSEM.NEG-SAT #ns ].
+
+;word-or-lexrule :+ [ SYNSEM.NEG-SAT #ns,
+;    DTR.SYNSEM.NEG-SAT #ns ].
+
+clause :+ [ SYNSEM.NEG-SAT na-or-+ ].
+
+; This grammar includes head-modifier rules.  To keep
+; out extraneous parses, constrain the value of MOD on
+; various subtypes of head.  This may need to be loosened later.
+; This constraint says that only adverbs, adjectives,
+; and adpositions can be modifiers.
+
++nvcdmo :+ [ MOD < > ].
+
+inflected :+ [ CLAUSE-MARKER-VERB-SUFFIX-FLAG luk, 
+	GENDER-NUMBER-NOUN-FLAG luk,
+	MOOD-VERB-PREFIX-FLAG luk,
+	TENSE-VERB-SUFFIX-FLAG luk ].
+
+infl-satisfied :+ [ CLAUSE-MARKER-VERB-SUFFIX-FLAG na-or-+,
+	GENDER-NUMBER-NOUN-FLAG na-or-+,
+	MOOD-VERB-PREFIX-FLAG na-or-+,
+	TENSE-VERB-SUFFIX-FLAG na-or-+ ].
+
+png :+ [ PERNUM pernum,
+    GEND gender,
+    PROXIMITY proximity ].
+
+basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
+    NON-HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
+
+;;;;;;;;;;;;;;
+;;; Features
+;;;;;;;;;;;;;;
+
+;;; Pernum
+
+pernum := *top*.
+singular := pernum.
+plural := pernum.
+1st := pernum.
+2nd := pernum.
+3rd := pernum.
+1singular := 1st & singular.
+2singular := 2nd & singular.
+3singular := 3rd & singular.
+1plural := 1st & plural.
+1plural_incl := 1plural.
+1plural_excl := 1plural.
+2plural := 2nd & 3plural+2plural.
+3plural := 3rd & 3plural+2plural.
+3plural+2plural := plural.
+
+;;; Gender
+
+gender := *top*.
+animate := gender.
+inanimate := gender.
+
+;;; Proximity
+
+proximity := *top*.
+proximate := proximity.
+obviative := proximity.
+
+;;; Tense
+
+nonfuture := tense.
+future := tense.
+
+;;; Aspect
+
+perfective := aspect.
+no-aspect := aspect.
+imperfective := aspect.
+
+;;; Mood
+irrealis := mood.
+realis := mood.
+
+;;;;;;;;;;;;;;;;;;;
+;;; Lexical Types
+;;;;;;;;;;;;;;;;;;;
+
+;;; Nouns
+
+noun-lex := basic-noun-lex & basic-one-arg & no-hcons-lex-item & non-mod-lex-item & affective-noun-suffix-rule-dtr & diminutive-noun-suffix-rule-dtr & gendernumber-noun-suffix-rule-dtr & noun-per-prefix-rule-dtr &
+  [ SYNSEM.LOCAL.CAT.VAL [ SPR < #spr &
+                                 [ LOCAL.CAT.HEAD det ] >,
+                           COMPS < >,
+                           SUBJ < >,
+                           SPEC < > ],
+    ARG-ST < #spr >,
+    INFLECTED.GENDER-NUMBER-NOUN-FLAG - ].
+
+no-spr-noun-lex := noun-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.SPR < [ OPT + ] > ].
+
+; Nouns which cannot take specifiers mark their SPR requirement
+; as OPT +.  Making the non-head daughter OPT - in this rule
+; keeps such nouns out.
+; 
+; Rules for building NPs.  Note that the Matrix uses SPR for
+; the specifier of nouns and SUBJ for the subject (specifier) of verbs.
+
+head-spec-phrase := basic-head-spec-phrase & head-final &
+  [ NON-HEAD-DTR.SYNSEM.OPT - ].
+
+1st-person-noun-lex := no-spr-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1st,
+    INFLECTED.GENDER-NUMBER-NOUN-FLAG na-or-- ].
+
+2nd-person-noun-lex := no-spr-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2nd,
+    INFLECTED.GENDER-NUMBER-NOUN-FLAG na-or-- ].
+
+3rd-person-noun-lex := noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 3rd,
+    INFLECTED.GENDER-NUMBER-NOUN-FLAG na-or-- ].
+
+animate-noun-noun-lex := noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [GEND animate,
+				      PERNUM 3rd],
+    INFLECTED.GENDER-NUMBER-NOUN-FLAG na-or-- ].
+
+inanimate-noun-noun-lex := noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [GEND animate,
+				      PERNUM 3rd],
+    INFLECTED.GENDER-NUMBER-NOUN-FLAG na-or-- ].
+
+1ple-pronoun-noun-lex := 1st-person-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1plural_excl,
+    INFLECTED.GENDER-NUMBER-NOUN-FLAG na-or-- ].
+
+1sg-pronoun-noun-lex := 1st-person-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1singular,
+    INFLECTED.GENDER-NUMBER-NOUN-FLAG na-or-- ].
+
+;;; Verbs
+; verb-lex is HC-LIGHT - to allow us to pick out
+; 
+;   lexical Vs for V-level attachment of negative adverbs.
+
+; Old initial verb-lex inputs
+; verb-lex := verb-lex-super &
+
+verb-lex := basic-verb-lex & non-mod-lex-item & verb-lex-super & T-marker-suffix-rule-dtr & LV-verb-suffix-class-rule-dtr & RP-verb-suffix-class-rule-dtr & INV-DIR-suffix-class-rule-dtr & negative-concord-verb-suffix-rule-dtr & clause-marker-verb-suffix-rule-dtr & object-agreement-verb-suffix-rule-dtr & tense-verb-suffix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr & 
+  [ ARG-ST.FIRST #subj &
+                 [ LOCAL [ CAT.VAL [ SPR < >,
+                                     COMPS < > ],
+                           CONT.HOOK.INDEX #xarg ] ],
+    SYNSEM.LOCAL [ CONT.HOOK.XARG #xarg,
+                   CAT [ VAL [ SPR < >,
+                               SPEC < >,
+                               SUBJ < #subj > ],
+                         HC-LIGHT - ] ],
+    INFLECTED [ CLAUSE-MARKER-VERB-SUFFIX-FLAG -,
+  		TENSE-VERB-SUFFIX-FLAG -,
+  		MOOD-VERB-PREFIX-FLAG -] ].
+
+;; embedded clauses
+
+embedding-verb-lex := verb-lex & clausal-second-arg-trans-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
+    ARG-ST < [ LOCAL.CAT.HEAD noun ],
+             #comps &
+             [ LOCAL [ CAT [ VAL [ SPR < >,
+                                   COMPS < > ],
+			     MC +,
+			     HEAD verb ] ,
+		       CONT.HOOK.INDEX.SF prop-or-ques]] > ].
+
+intransitive-verb-lex := verb-lex & intransitive-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
+    ARG-ST.FIRST.LOCAL.CAT.HEAD noun ].
+
+transitive-verb-lex := verb-lex & transitive-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
+    ARG-ST < [ LOCAL.CAT.HEAD noun ],
+             #comps &
+             [ LOCAL.CAT [ VAL [ SPR < >,
+                                 COMPS < > ],
+                           HEAD noun ] ] > ].
+
+ditransitive-verb-lex := verb-lex & ditransitive-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps1, #comps2 >,
+    ARG-ST < [ LOCAL.CAT.HEAD noun ],
+             #comps1 &
+             [ LOCAL.CAT [ VAL [ SPR < >,
+                                 COMPS < > ],
+                           HEAD noun ] ],
+             #comps2 &
+             [ LOCAL.CAT [ VAL [ SPR < >,
+                                 COMPS < > ],
+                           HEAD noun ] ] > ].
+
+basic-ditrans-verb-lex := ditransitive-verb-lex.
+
+basic-trans-verb-lex := transitive-verb-lex.
+
+basic-intrans-verb-lex := intransitive-verb-lex.
+
+;;; Others
+
+;;; Determiners
+;;; SPEC is non-empty, and already specified by basic-determiner-lex.
+determiner-lex-supertype := norm-hook-lex-item & basic-zero-arg & non-mod-lex-item &
+ [ SYNSEM [ LOCAL [ CAT [ HEAD det,
+			   VAL [ SPEC.FIRST.LOCAL.CONT.HOOK [ INDEX #ind,
+				  			      LTOP #larg ],
+                              SPR < >,
+                              SUBJ < >,
+                             COMPS < > ] ],
+		     CONT [ HCONS < ! qeq &
+				 [ HARG #harg,
+				   LARG #larg ] ! >,
+		            RELS <! #keyrel !> ] ],
+            LKEYS.KEYREL #keyrel & quant-relation &
+			    [ ARG0 #ind,
+			      RSTR #harg,
+			      PRED "exist_q_rel"] ] ].
+
+;;;The original determiner PRED value: SYNSEM.LKEYS.KEYREL.PRED "exist_q_rel"
+
+thisNI-determiner-lex := determiner-lex-supertype &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND inanimate ].
+
+thatNI-determiner-lex := determiner-lex-supertype &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND inanimate ].
+
+thisNA-determiner-lex := determiner-lex-supertype &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND animate ].
+
+thatNA-determiner-lex := determiner-lex-supertype &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND animate ].
+
+thatNApl-determiner-lex := determiner-lex-supertype &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM plural,
+                                                                GEND animate ] ].
+
+thisobv-determiner-lex := determiner-lex-supertype &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PROXIMITY obviative ].
+
+thisobvpl-determiner-lex := determiner-lex-supertype &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM plural,
+                                                                PROXIMITY obviative ] ].
+
+;;; Information Structure
+infostr-marking-mod-lex := no-rels-hcons-icons-lex-item &
+  [ SYNSEM.LOCAL.CAT [ HEAD adv &
+                            [ MOD < [ LIGHT - ] > ],
+                       VAL [ SUBJ < >,
+                             COMPS < >,
+                             SPR < >,
+                             SPEC < > ] ] ].
+
+focus-or-topic-marking-mod-lex := infostr-marking-mod-lex &
+  [ SYNSEM.LOCAL.CAT [ MKG fc,
+                       HEAD.MOD < [ L-PERIPH luk,
+                                    LOCAL [ CAT.HEAD noun,
+                                            CONT.HOOK.ICONS-KEY focus-or-topic ] ] > ] ].
+
+contrast-focus-marking-mod-lex := infostr-marking-mod-lex &
+  [ SYNSEM.LOCAL.CAT [ MKG fc,
+                       HEAD.MOD < [ L-PERIPH luk,
+                                    LOCAL [ CAT.HEAD noun,
+                                            CONT.HOOK.ICONS-KEY contrast-focus ] ] > ] ].
+
+;;; Demonstratives
+
+demonstrative_a_rel := predsort.
+proximal+dem_a_rel := demonstrative_a_rel. ; close to speaker
+distal+dem_a_rel := demonstrative_a_rel.   ; away from speaker
+mid+dem_a_rel := distal+dem_a_rel.         ; away, but not very far away
+far+dem_a_rel := distal+dem_a_rel.         ; very far away
+
+;;; Adjectives
+
+adj-lex := basic-adjective-lex & intersective-mod-lex &
+	      norm-ltop-lex-item &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD adj,
+                                                    VAL.SPR cons ] ] >,
+			   VAL [ SPR < >,
+				 SUBJ < >,
+				 COMPS < >,
+				 SPEC < > ],
+			   POSTHEAD - ]]]].
+
+;;; Adverbs
+
+adverb-lex := basic-adverb-lex & intersective-mod-lex &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ]>,
+			   VAL [ SPR < >,
+				 SUBJ < >,
+				 COMPS < >,
+				 SPEC < > ]]]]].
+
+
+; Type for negative adverbs.
+; 
+; This adverb should go through a specialized phrase structure rule
+;        included with this grammar.
+
+neg-adv-lex := basic-scopal-adverb-lex &
+  [ SYNSEM.LOCAL.CAT [ VAL [ SPR < >,
+                             COMPS < >,
+                             SUBJ < > ],
+                       POSTHEAD -,
+                       HEAD [ NEGATED +,
+                              MOD < [ LOCAL.CAT [ HEAD verb,
+                                                  VAL [ SUBJ < > ] ] ] > ] ] ].
+
+neg-adj-head-scop-phrase := adj-head-scop-phrase &
+  [ SYNSEM.NEG-SAT +,
+    HEAD-DTR.SYNSEM.NEG-SAT -,
+    NON-HEAD-DTR neg-adv-lex ].
+
+;;;;;;;;;;;;;;;;;;;
+;;; Lexical Rules
+;;;;;;;;;;;;;;;;;;;
+
+;;; Intermediate rule types
+
+clause-marker-verb-suffix-rule-dtr := word-or-lexrule.
+INV-DIR-suffix-class-rule-dtr := word-or-lexrule.
+per-prefix-class-rule-dtr := word-or-lexrule.
+diminutive-noun-suffix-rule-dtr := word-or-lexrule.
+affective-noun-suffix-rule-dtr := word-or-lexrule.
+T-marker-suffix-rule-dtr := word-or-lexrule.
+tense-verb-suffix-rule-dtr := word-or-lexrule.
+RP-verb-suffix-class-rule-dtr := word-or-lexrule.
+negative-concord-verb-suffix-rule-dtr := word-or-lexrule.
+gendernumber-noun-suffix-rule-dtr := word-or-lexrule.
+LV-verb-suffix-class-rule-dtr := word-or-lexrule.
+noun-per-prefix-rule-dtr := word-or-lexrule.
+object-agreement-verb-suffix-rule-dtr := word-or-lexrule.
+aspect-prefix-rule-dtr := word-or-lexrule.
+modal-verb-prefix-lex-rule-dtr := word-or-lexrule.
+aspect-prefix-lex-rule-dtr := word-or-lexrule.
+mood-verb-prefix-rule-dtr := word-or-lexrule.
+verb-lex-super := word-or-lexrule.
+
+;;;;;; Lexical rule types ;;;;;;
+
+;;; Nouns ;;;
+
+;;; Gender/Number
+
+gendernumber-noun-suffix-lex-rule-super := add-only-no-ccont-rule &
+  [ INFLECTED.GENDER-NUMBER-NOUN-FLAG +,
+    DTR gendernumber-noun-suffix-rule-dtr ].
+
+; inanimate-pl-noun-lex-rule := gendernumber-noun-suffix-lex-rule-super & infl-lex-rule &
+;   [ DTR.INFLECTED.INANIMATE-NOUN-NOUN-FLAG +,
+;     SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM plural,
+;                                        GEND inanimate,
+;                                        PROXIMITY proximate ] ].
+
+;animate-pl-noun-lex-rule := gendernumber-noun-suffix-lex-rule-super & infl-lex-rule &
+;   [ DTR.INFLECTED.ANIMATE-NOUN-NOUN-FLAG +,
+;     SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM plural,
+;                                        GEND animate,
+;                                        PROXIMITY proximate ] ].
+
+inanimate-pl-noun-lex-rule := gendernumber-noun-suffix-lex-rule-super & infl-lex-rule &
+  [ DTR.SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND inanimate,
+    SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM plural,
+                                       PROXIMITY proximate ] ].
+
+animate-pl-noun-lex-rule := gendernumber-noun-suffix-lex-rule-super & infl-lex-rule &
+  [ DTR.SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND animate,
+    SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM plural,
+                                       PROXIMITY proximate ] ].
+
+;prox-noun-lex-rule := gendernumber-noun-suffix-lex-rule-super & const-lex-rule &
+;  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PROXIMITY proximate ].
+
+obv-pl-noun-lex-rule := gendernumber-noun-suffix-lex-rule-super & infl-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PROXIMITY obviative,
+                                       PERNUM plural ] ].
+
+obv-sg-noun-lex-rule := gendernumber-noun-suffix-lex-rule-super & infl-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PROXIMITY obviative,
+                                       PERNUM singular ] ].
+
+sg-noun-lex-rule := const-lex-rule & gendernumber-noun-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PROXIMITY proximate,
+				       PERNUM singular ] ].
+
+;;; Person
+
+noun-per-prefix-lex-rule-super := add-only-no-ccont-rule & affective-noun-suffix-rule-dtr & diminutive-noun-suffix-rule-dtr & gendernumber-noun-suffix-rule-dtr & infl-lex-rule &
+  [ INFLECTED #infl,
+    DTR noun-per-prefix-rule-dtr &
+	      [INFLECTED #infl] ].
+
+3rd-pernum-lex-rule := noun-per-prefix-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 3rd ].
+
+2nd-pernum-lex-rule := noun-per-prefix-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2nd ].
+
+1st-pernum-lex-rule := noun-per-prefix-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1st ].
+
+;;; Affective
+
+affective-noun-suffix-lex-rule-super := add-only-no-ccont-rule & diminutive-noun-suffix-rule-dtr & gendernumber-noun-suffix-rule-dtr & infl-lex-rule &
+  [ INFLECTED #infl,
+    DTR affective-noun-suffix-rule-dtr &
+	      [INFLECTED #infl] ].
+
+AFF-lex-rule := affective-noun-suffix-lex-rule-super.
+
+;;; Diminutive
+
+diminutive-noun-suffix-lex-rule-super := add-only-no-ccont-rule & gendernumber-noun-suffix-rule-dtr & infl-lex-rule &
+  [ INFLECTED #infl,
+    DTR diminutive-noun-suffix-rule-dtr &
+	      [INFLECTED #infl] ].
+
+DIM-lex-rule := diminutive-noun-suffix-lex-rule-super.
+
+;;; Incorporation
+incorporation-lex-rule := same-non-local-lex-rule & same-modified-lex-rule & same-light-lex-rule & same-ctxt-lex-rule & same-agr-lex-rule & infl-lex-rule & T-marker-suffix-rule-dtr & LV-verb-suffix-class-rule-dtr & RP-verb-suffix-class-rule-dtr & INV-DIR-suffix-class-rule-dtr & negative-concord-verb-suffix-rule-dtr & clause-marker-verb-suffix-rule-dtr & object-agreement-verb-suffix-rule-dtr & tense-verb-suffix-rule-dtr & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+  [ SYNSEM.LOCAL.CAT [ HEAD verb,
+ 		        VAL [ COMPS < >,
+   			     SUBJ < [ LOCAL.CAT [ HEAD noun,
+    						  VAL.SPR < > ] ] > ] ],
+     C-CONT [ RELS <! arg1-ev-relation &
+       	     	        [ LBL #ltop,
+   	                  ARG0 #index,
+ 			  ARG1 #xarg  & ref-ind,
+ 			  ARG2 #arg2,
+   		          PRED "_make_v_rel"],
+ 		     quant-relation &
+ 		        [ PRED "exist_q_rel",
+ 		          ARG0 #arg2,
+ 		          RSTR #harg ] !>,
+              HCONS <! qeq &
+  		   [ HARG #harg,
+  		     LARG #larg ] !>,
+              HOOK [ INDEX #index,
+  		    XARG #xarg,
+  		    LTOP #ltop ] ],
+    DTR adj-prefix-lex-rule & 
+	[ SYNSEM.LOCAL.CONT.HOOK [ LTOP #larg, 
+ 			    XARG #xarg ] ] ].
+
+;;; Verbs ;;;
+;;; Object Gender/Number Agreement
+
+object-agreement-verb-suffix-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule & tense-verb-suffix-rule-dtr & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+  [ INFLECTED #infl,
+    DTR object-agreement-verb-suffix-rule-dtr &
+        [ INFLECTED #infl ] ].
+
+1st-pl-lex-rule := object-agreement-verb-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 1plural,
+								 PROXIMITY proximate ] ].
+
+not-1st-pl-lex-rule := object-agreement-verb-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3plural+2plural,
+								 PROXIMITY proximate ] ].
+
+inanimate-pl-verb-lex-rule := object-agreement-verb-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ GEND inanimate,
+                                                                 PERNUM plural,
+								 PROXIMITY proximate ] ].
+
+animate-pl-verb-lex-rule := object-agreement-verb-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM plural,
+                                                                 GEND animate,
+								 PROXIMITY proximate ] ].
+
+obv-verb-lex-rule := object-agreement-verb-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM singular,
+								 PROXIMITY obviative ] ].
+
+obv-pl-verb-lex-rule := object-agreement-verb-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM plural,
+                                                                 PROXIMITY obviative ] ].
+
+;;; Subject Person Agreement
+
+per-prefix-class-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+  [ INFLECTED #infl,
+    DTR per-prefix-class-rule-dtr &
+	      [INFLECTED #infl] ].
+
+1st-per-prefix-lex-rule := per-prefix-class-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1singular ].
+
+2nd-per-prefix-lex-rule := per-prefix-class-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2singular ].
+
+3rd-per-prefix-lex-rule := per-prefix-class-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 3singular ].
+
+C-per-prefix-lex-rule := per-prefix-class-lex-rule-super.
+
+;;; Aspect
+
+aspect-prefix-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule & per-prefix-class-rule-dtr &
+  [ INFLECTED #infl,
+    DTR aspect-prefix-lex-rule-dtr &
+        [ INFLECTED #infl ] ].
+
+perfective-prefix-lex-rule := aspect-prefix-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective ].
+
+;;;Negative Concord
+
+negative-concord-verb-suffix-lex-rule-super := infl-lex-rule & add-only-no-ccont-rule & clause-marker-verb-suffix-rule-dtr & object-agreement-verb-suffix-rule-dtr & tense-verb-suffix-rule-dtr & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+  [ INFLECTED #infl,
+    DTR negative-concord-verb-suffix-rule-dtr &
+        [ INFLECTED #infl ] ].
+
+negative-concord-marker-lex-rule := negative-concord-verb-suffix-lex-rule-super &
+  [ SYNSEM.NEG-SAT -].
+    ;DTR.SYNSEM.NEG-SAT na-or-+ ].
+
+;;; Clause Type Marker
+
+clause-marker-verb-suffix-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule & object-agreement-verb-suffix-rule-dtr & tense-verb-suffix-rule-dtr & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+ [ INFLECTED [ CLAUSE-MARKER-VERB-SUFFIX-FLAG +,
+	MOOD-VERB-PREFIX-FLAG #mood-verb-prefix,
+        TENSE-VERB-SUFFIX-FLAG #tense-verb-suffix ],
+    DTR clause-marker-verb-suffix-rule-dtr &
+	     [ INFLECTED [ MOOD-VERB-PREFIX-FLAG #mood-verb-prefix,
+                           TENSE-VERB-SUFFIX-FLAG #tense-verb-suffix ] ] ].
+
+clause-marker-lex-rule := clause-marker-verb-suffix-lex-rule-super.
+
+;;; Mood
+mood-verb-prefix-lex-rule-super := add-only-no-ccont-rule & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+ [ INFLECTED [ CLAUSE-MARKER-VERB-SUFFIX-FLAG #clause-marker,
+	MOOD-VERB-PREFIX-FLAG +,
+        TENSE-VERB-SUFFIX-FLAG #tense-verb-suffix ],
+    DTR mood-verb-prefix-rule-dtr &
+	     [ INFLECTED [ CLAUSE-MARKER-VERB-SUFFIX-FLAG #clause-marker,
+                           TENSE-VERB-SUFFIX-FLAG #tense-verb-suffix ] ] ].
+
+irrealis-prefix-lex-rule := infl-lex-rule & mood-verb-prefix-lex-rule-super &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD irrealis ].
+
+realis-prefix-lex-rule := const-lex-rule & mood-verb-prefix-lex-rule-super &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD realis ].
+
+;;; Tense
+
+tense-verb-suffix-lex-rule-super := add-only-no-ccont-rule & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+ [ INFLECTED [ CLAUSE-MARKER-VERB-SUFFIX-FLAG #clause-marker,
+	MOOD-VERB-PREFIX-FLAG #mood-verb-prefix,
+        TENSE-VERB-SUFFIX-FLAG + ],
+    DTR tense-verb-suffix-rule-dtr &
+	     [ INFLECTED [ CLAUSE-MARKER-VERB-SUFFIX-FLAG #clause-marker,
+			   MOOD-VERB-PREFIX-FLAG #mood-verb-prefix ] ] ].
+
+future-suffix-lex-rule := tense-verb-suffix-lex-rule-super & infl-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.TENSE future ].
+
+nonfuture-lex-rule := tense-verb-suffix-lex-rule-super & const-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.TENSE nonfuture ].
+
+;;; T marker
+
+T-marker-suffix-lex-rule-super := infl-lex-rule & add-only-no-ccont-rule & LV-verb-suffix-class-rule-dtr & RP-verb-suffix-class-rule-dtr & INV-DIR-suffix-class-rule-dtr & negative-concord-verb-suffix-rule-dtr & clause-marker-verb-suffix-rule-dtr & object-agreement-verb-suffix-rule-dtr & tense-verb-suffix-rule-dtr & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr & 
+  [ INFLECTED #infl,
+    DTR T-marker-suffix-rule-dtr &
+        [ INFLECTED #infl ] ].
+
+T-marker-lex-rule := T-marker-suffix-lex-rule-super.
+
+;;; Light Verbs
+
+LV-verb-suffix-class-lex-rule-super := infl-lex-rule & add-only-no-ccont-rule & RP-verb-suffix-class-rule-dtr & INV-DIR-suffix-class-rule-dtr & negative-concord-verb-suffix-rule-dtr & clause-marker-verb-suffix-rule-dtr & object-agreement-verb-suffix-rule-dtr & tense-verb-suffix-rule-dtr & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+  [ INFLECTED #infl,
+    DTR LV-verb-suffix-class-rule-dtr &
+        [ INFLECTED #infl ] ].
+
+LV-NI-verb-suffix-lex-rule := LV-verb-suffix-class-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND inanimate ].
+
+LV-NA-verb-suffix-lex-rule := LV-verb-suffix-class-lex-rule-super
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND animate ].
+
+LV-1-verb-suffix-lex-rule := LV-verb-suffix-class-lex-rule-super
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1st ].
+
+LV-2-verb-suffix-lex-rule := LV-verb-suffix-class-lex-rule-super
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2nd ].
+
+LV-verb-suffix-lex-rule := LV-verb-suffix-class-lex-rule-super.
+
+;;; Inverse marker (analyzed as passive)
+
+INV-DIR-suffix-class-lex-rule-super := infl-lex-rule & cat-change-only-lex-rule & negative-concord-verb-suffix-rule-dtr & clause-marker-verb-suffix-rule-dtr & object-agreement-verb-suffix-rule-dtr & tense-verb-suffix-rule-dtr & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+  [ INFLECTED #infl,
+    DTR INV-DIR-suffix-class-rule-dtr &
+        [ INFLECTED #infl ] ].
+
+INV-lex-rule := INV-DIR-suffix-class-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT [ HEAD verb,
+	               VAL [ SUBJ < #comps >,
+		    	     COMPS < #spr > ] ],
+    DTR.SYNSEM.LOCAL.CAT.VAL [ SUBJ < #spr >,
+			       COMPS < #comps >,
+			       COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PROXIMITY proximate ] ].
+
+DIR-lex-rule := INV-DIR-suffix-class-lex-rule-super & add-only-no-ccont-rule.
+
+;;; RPs
+
+RP-verb-suffix-class-lex-rule-super := infl-lex-rule & add-only-no-ccont-rule & INV-DIR-suffix-class-rule-dtr & negative-concord-verb-suffix-rule-dtr & clause-marker-verb-suffix-rule-dtr & object-agreement-verb-suffix-rule-dtr & tense-verb-suffix-rule-dtr & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+  [ INFLECTED #infl,
+    DTR RP-verb-suffix-class-rule-dtr &
+        [ INFLECTED #infl ] ].
+
+RP-verb-suffix-lex-rule := RP-verb-suffix-class-lex-rule-super.
+
+;;; Modal
+
+modal-verb-prefix-class-lex-rule-super := infl-lex-rule & cont-change-only-lex-rule & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+  [ INFLECTED #infl,
+   DTR modal-verb-prefix-lex-rule-dtr &
+         [ INFLECTED #infl ] ].
+
+can-modal-lex-rule := modal-verb-prefix-class-lex-rule-super &
+  [ C-CONT [ RELS <! arg1-ev-relation &
+      	     	        [ LBL #ltop,
+  	                  ARG0 #index,
+ 		          ARG1 #harg,
+  		          PRED "_can_v_rel"] !>,
+             HCONS <! qeq &
+ 		   [ HARG #harg,
+ 		     LARG #larg ] !>,
+             HOOK [ INDEX #index,
+ 		    XARG #xarg,
+ 		    LTOP #ltop ] ],
+   DTR.SYNSEM.LOCAL.CONT.HOOK [ LTOP #larg, 
+			    XARG #xarg ] ].
+
+;;; Adverbs
+
+adverb-verb-suffix-class-lex-rule-super := infl-lex-rule & add-only-rule & T-marker-suffix-rule-dtr & LV-verb-suffix-class-rule-dtr & RP-verb-suffix-class-rule-dtr & INV-DIR-suffix-class-rule-dtr & negative-concord-verb-suffix-rule-dtr & clause-marker-verb-suffix-rule-dtr & object-agreement-verb-suffix-rule-dtr & tense-verb-suffix-rule-dtr & mood-verb-prefix-rule-dtr & modal-verb-prefix-lex-rule-dtr & aspect-prefix-lex-rule-dtr & per-prefix-class-rule-dtr &
+  [ INFLECTED #infl,
+    DTR verb-lex-super &
+        [ INFLECTED #infl ] ].
+
+adverb-verb-suffix-lex-rule := adverb-verb-suffix-class-lex-rule-super.
+
+adverbializer-suffix-lex-rule-super := infl-lex-rule & add-only-no-ccont-rule &
+  [ INFLECTED #infl,
+    DTR adverb-lex &
+	      [INFLECTED #infl ] ].
+
+adverbializer-suffix-lex-rule :=  adverbializer-suffix-lex-rule-super.
+
+;;; Adjectives
+
+adj-noun-prefix-lex-rule-super := add-only-rule & affective-noun-suffix-rule-dtr & diminutive-noun-suffix-rule-dtr & gendernumber-noun-suffix-rule-dtr & infl-lex-rule & noun-per-prefix-rule-dtr &
+  [ INFLECTED #infl,
+    DTR noun-lex &
+	      [INFLECTED #infl] ].
+
+adj-prefix-lex-rule := adj-noun-prefix-lex-rule-super &
+  [ C-CONT [ RELS <! arg1-ev-relation &
+    	     	   [ LBL #ltop,
+		     ARG1 #index ] !>,
+	     HOOK #hook ],
+    DTR.SYNSEM.LOCAL.CONT.HOOK #hook &
+			       [ LTOP #ltop,
+    			      	 INDEX #index ]].
+
+;;;Currently not working, just overgenerating
+adj-predicate-lex-rule := cat-change-only-lex-rule & infl-lex-rule &
+  [ SYNSEM.LOCAL.CAT [ HEAD verb,
+		       VAL [ COMPS < >,
+  			     SUBJ < [ LOCAL [ CONT.HOOK.INDEX #arg1,
+  					      CAT [ HEAD noun,
+   						    VAL.SPR < > ] ] ] > ] ],
+    C-CONT [ HOOK [ XARG #arg1 ] ],
+    ;This args constraint is wrong -- need to constrain the input type to be adj-prefix -- T.J.
+    ;Maybe not? This rule should be for examples like "it is red" -- so it should take adj as the DTR
+    ARGS < [ SYNSEM.LOCAL [ CAT [ HEAD adj,
+  				  VAL.SPR cons ] ] ] > ].
+
+; np-predicate-rule := adj-prefix-lex-rule &
+;   [ SYNSEM.LOCAL.CAT [ HEAD verb,
+; 		       VAL [ COMPS < >,
+; 			     SUBJ < [ LOCAL [ CONT.HOOK.INDEX #arg1,
+; 					      CAT [ HEAD noun,
+; 						  VAL.SPR < > ] ] ] > ] ],
+;    C-CONT [ HOOK [ LTOP #ltop,
+; 		    INDEX #index,
+; 		    XARG #arg1 ],
+; 	     RELS <! arg12-ev-relation &
+; 		   [ PRED "_be_v_id_rel",
+; 		     LBL #ltop,
+; 		     ARG0 #index,
+; 		     ARG1 #arg1,
+; 		     ARG2 #arg2 ],
+; 		   quant-relation &
+; 		   [ PRED "exist_q_rel",
+; 		     ARG0 #arg2,
+; 		     RSTR #harg ] !>,
+; 	     HCONS <! qeq & [ HARG #harg, LARG #larg ] !> ],
+;     ARGS < [ SYNSEM.LOCAL [ CAT [ HEAD noun,
+; 				  VAL.SPR cons ],
+; 			    CONT.HOOK [ INDEX #arg2,
+; 					LTOP #larg ]]] > ].
+
+
+;;;;;;;;;;;;;;;;;;;
+;;; Phrasal Types
+;;;;;;;;;;;;;;;;;;;
+
+head-infostr-mod-phrase := no-ccont-rule & head-adj-int-phrase &
+  [ SYNSEM [ LIGHT -,
+             LOCAL [ CAT.MKG #mkg,
+                     CONT.HOOK [ ICONS-KEY.CLAUSE #clause,
+                                 CLAUSE-KEY #clause ] ] ],
+    NON-HEAD-DTR.SYNSEM.LOCAL.CAT.MKG #mkg ].
+
+;Constraint on MC used to be part of matrix.tdl
+;;it applies to all wo implementations, except for v2
+
+head-comp-phrase := basic-head-1st-comp-phrase & head-initial.
+
+subj-head-phrase := decl-head-subj-phrase & head-final &
+  [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < >].
+
+; Bare NP phrase.  Consider modifying the PRED value of the quantifier relation
+; introduced to match the semantic effect of bare NPs in your language.
+
+bare-np-phrase := basic-bare-np-phrase &
+[SYNSEM.LOCAL.CONT.HOOK.INDEX [ COG-ST type-id],
+ C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
+
+decl-head-opt-subj-phrase :+
+[ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PROXIMITY proximate ].

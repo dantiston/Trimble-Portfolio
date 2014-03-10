@@ -1,0 +1,4 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+nonfuture-lex := nonfuture-lex-rule.
+sg-noun-lex := sg-noun-lex-rule.
+realis-prefix-lex := realis-prefix-lex-rule.

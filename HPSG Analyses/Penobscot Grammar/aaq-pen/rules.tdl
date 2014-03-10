@@ -1,0 +1,18 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+head-nf-mod := head-infostr-mod-phrase.
+
+decl-head-opt-subj := decl-head-opt-subj-phrase.
+
+basic-head-opt-comp := basic-head-opt-comp-phrase.
+
+neg-adj-head-scop := neg-adj-head-scop-phrase.
+
+head-comp := head-comp-phrase.
+
+subj-head := subj-head-phrase.
+
+head-spec := head-spec-phrase.
+
+bare-np := bare-np-phrase.
+
+adj-head-int := adj-head-int-phrase.

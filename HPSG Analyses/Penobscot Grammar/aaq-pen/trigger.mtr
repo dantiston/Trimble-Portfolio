@@ -1,0 +1,10 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Semantically Empty Lexical Entries
+
+%3Dka-marker_gr := arg0e_gtr &
+  [ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
+    FLAGS.TRIGGER "%3Dka-marker" ].
+
+%3Daskwe-marker_gr := arg0e_gtr &
+  [ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
+    FLAGS.TRIGGER "%3Daskwe-marker" ].

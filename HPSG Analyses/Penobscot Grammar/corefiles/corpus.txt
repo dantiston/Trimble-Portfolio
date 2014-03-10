@@ -1,0 +1,108 @@
+Language: Penobscot
+Language code: aaq-pen
+Lines: orth orth-seg gloss translat
+Author: Melanie Bolla and T.J. Trimble
+Date: 05-17-2013
+Source a: Quinn, Conor. Referential-Access Dependency in Penobscot. 2006. http://www.conormquinn.com/CQuinn2006Referential-AccessDependencyInPenobscot.pdf
+Source b: Quinn, Conor. A Preliminary Survey of the Evidential and Information-Structural Properties of Some Algonquian Discourse Particles. 2010. http://www.conormquinn.com/cmquinn2010PrelimSurveyAlgDiscourseParticles.pdf
+
+#1 CQ 73, Gloss by author
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: corpus
+αnkáwαčəmo
+αnkaw-αt-əm-i-w
+add-report-by_voice-LVᴺᴬ-W
+NA repeats, retells, interprets
+
+#2 ISP 4, Gloss by author
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: corpus
+ni=àkwa, iyo nὰwat ítαsik kči-ótene atóthote etali-sάkətehtəkwek sìpo
+ni=akwa iyo naw-at e-i-t-α-əs-i-ik kči-otene atot-ot-e-w e-ətali-sαkət-ehtəkw-e-ik sipo
+LNK=SHD thisNI long_time-LVni C-say-T-??-rflx-LVNI-NIcj great-village _point-located-vNI-W C-_place-rivermouth-river-vNI-NIcj river
+It was long ago, it is said, that a large village was situated at the mouth of a river
+
+#3 CQ 181
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: corpus
+owa kʷὰkʷsəss wəkisi-kəmotənáməkonα skʷə́te
+owa kʷαkʷ-əhs wə-kisi-kəmot-ən-am-əkʷ-əne-əwαw skʷəte
+thisNA fox-AFF 3-PERF-steal-by_hand-RP-INV-N-≠1NApl fire
+the fox had succeeded in stealing fire from them
+
+#4 CQ 207
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: corpus
+kkati-mαlhαtohkéwəkona wa énikʷəss
+kə-kat-mαlh-αto-əhk-e-aw-əkʷ-w-ənaw wa enikʷ-əhs
+2-irrealis-strange-tell-make-DOᴺᴬ-RP-INV-W-1pl thisNA ant-AFF
+The Ant is going to tell us strange news
+
+#5 ISP 3, Gloss by author
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: corpus
+ὰta=č mìna kətahčəwi-kwteləmάwiwα owa áwəhαnəto
+αta=č mina kə-eht-ahčəwi-kwteləm-α-w-w-əwαw owa awe-əhαnəto
+not=FUT again 2-must-fear-feel-DIR-NEG-W-≠1pl thisNA who-supernat'l_being
+You will never again have to fear this demon
+
+#6 ISP 5, Gloss by author
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: corpus
+owa kčì-skok wəkisi-=eht-mətewələnəwíhpənalαl wə̀ləskal
+owa kči-skok wə-kisi=eht-mətew-ələnəw-hpən-e-w-al wə-ləs-k-w-al
+thisNA great-snake 3-PERF=INF-shamanic-person-injure-DIR-W-OBV good-leg-LVNA-W-OBV
+This serpent had evidently cast a magic spell on Pretty Legs
+
+#7 ISP 5, Gloss by author
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: corpus
+n=eht wə̀ləske weči-álinawαt iyòlil kčí- skokal, tàhəlaw=əpa awení-wskinohs
+n=eht wə-ləs-k-w e-weci-ali-na-e-t iyo-al kči-skok-al tahəlaw=əpa aweni-wskinohs
+LNK=INF good-leg-vNA-W C-_from-_way-view-DIR-NAcj thisNA-OBV great-snake-OBV like=CND who-young_man
+Therefore, Pretty Legs looked upon the serpent as she would some youth
+
+#8 ISP 5, Gloss by author
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: corpus
+ow[a]=eht na kčì-skok nepəwαklαsánəhi, iyòhi kətákəhi wənisəwihətíčəhi
+owa=eht na kči-skok e-nəpəwi-αkw-lα-san-ehi iyo-yohi kətak-əhi wə-nisə-wi-ə-ak-t-əhi
+thisNA=INF thatNA great-snake C-die-DIR-NAcj-SAN-OBVpl thisNA-OBVpl other-OBVpl 3-two-be-vNA-NApl-NAcj-OBVpl
+Evidently, this serpent is the one who had caused the death of her other husbands
+
+#9 author: based on ISP 2
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: corpus
+ni owa sὰkəmα wə̀tihlαn kətaskami-mάčehlαn
+ni owa sαkəmα wə-ih-α-n kə-taskami-mαce-hl-α-n
+thisNI thisNA chief 3-tell-DIR-N 2-forever-away-move-LVNA-N
+Then the chief told him you are to leave forever
+
+#10 ISP 11, Gloss by author
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: corpus
+tὰn=əkwa=p[a]=eht, nì=ka=tte ὰnəkwəč àwen ólikkαn, ὰskwe iyok ὰnəkwəč kə̀takik wətatəlαkwαkkwáhətinα
+tαn=əkwa=pa=eht ni=ka=tte αnəkwəč awen wə-wəl-wik-əhk-α-ənə αskwe iyo-ak αnəkwəč kə̀tak-ak wə-tat-əlα-kw-αk-kwa-hə-tin-α
+how=??=CND=INF LNK=BR=INT some who 3-good-house-make-vNA-N TS thisNA-NApl some other-NApl 3-evening-cook-make-vNA-ExtPl-vNA-N-≠1pl
+Accordingly someone promptly prepared camp while on the other hand some of the others cooked the evening meal
+

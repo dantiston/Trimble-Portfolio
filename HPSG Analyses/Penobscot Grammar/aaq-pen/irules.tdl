@@ -1,0 +1,323 @@
+
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+
+;;;Noun affixes
+inanimate-pl-noun-suffix :=
+%suffix (* -al)
+inanimate-pl-noun-lex-rule.
+
+animate-pl-noun-suffix :=
+%suffix (* -ak)
+animate-pl-noun-lex-rule.
+
+obv-pl-noun-suffix :=
+%suffix (* -a)
+obv-pl-noun-lex-rule.
+
+obv-sg-noun-suffix :=
+%suffix (* -al)
+obv-sg-noun-lex-rule.
+
+3rd-pernum-prefix1 :=
+%prefix (* wi-)
+3rd-pernum-lex-rule.
+
+3rd-pernum-prefix2 :=
+%prefix (* wə-)
+3rd-pernum-lex-rule.
+
+3rd-pernum-prefix3 :=
+%prefix (* a-)
+3rd-pernum-lex-rule.
+
+2nd-pernum-prefix1 :=
+%prefix (* ki-)
+2nd-pernum-lex-rule.
+
+2nd-pernum-prefix2 :=
+%prefix (* kə-)
+2nd-pernum-lex-rule.
+
+1st-pernum-prefix1 :=
+%prefix (* ni-)
+1st-pernum-lex-rule.
+
+1st-pernum-prefix2 :=
+%prefix (* nə-)
+1st-pernum-lex-rule.
+
+AFF-suffix :=
+%suffix (* -əhs)
+AFF-lex-rule.
+
+DIM-suffix :=
+%suffix (* -s)
+DIM-lex-rule.
+
+;;;Verb affixes
+
+can-modal-prefix :=
+%prefix (* kis-)
+can-modal-lex-rule.
+
+inanimate-pl-verb-suffix1 :=
+%suffix (* -al)
+inanimate-pl-verb-lex-rule.
+
+inanimate-pl-verb-suffix2 :=
+%suffix (* -l)
+inanimate-pl-verb-lex-rule.
+
+animate-pl-verb-suffix :=
+%suffix (* -ak)
+animate-pl-verb-lex-rule.
+
+1st-pl-suffix :=
+%suffix (* -ənaw)
+1st-pl-lex-rule.
+
+not-1st-pl-suffix :=
+%suffix (* -əwαw)
+not-1st-pl-lex-rule.
+
+obv-verb-suffix :=
+%suffix (* -al)
+obv-verb-lex-rule.
+
+obv-pl-verb-suffix :=
+%suffix (* -a)
+obv-pl-verb-lex-rule.
+
+1st-per-prefix :=
+%prefix (* nə-)
+1st-per-prefix-lex-rule.
+
+2nd-per-prefix :=
+%prefix (* kə-)
+2nd-per-prefix-lex-rule.
+
+3rd-per-prefix :=
+%prefix (* wə-)
+3rd-per-prefix-lex-rule.
+
+C-per-prefix :=
+%prefix (* e-)
+C-per-prefix-lex-rule.
+
+perfective-prefix-prefix :=
+%prefix (* kisi-)
+perfective-prefix-lex-rule.
+
+negative-concord-marker-suffix :=
+%suffix (* -w)
+negative-concord-marker-lex-rule.
+
+w-clause-marker-suffix :=
+%suffix (* -w)
+clause-marker-lex-rule.
+
+p-clause-marker-suffix :=
+%suffix (* -əp)
+clause-marker-lex-rule.
+
+n-clause-marker-suffix :=
+%suffix (* -əne)
+clause-marker-lex-rule.
+
+pn-clause-marker-suffix :=
+%suffix (* -əpəne)
+clause-marker-lex-rule.
+
+future-suffix :=
+%suffix (* =č)
+future-suffix-lex-rule.
+
+irrealis-prefix :=
+%prefix (* kat-)
+irrealis-prefix-lex-rule.
+
+T-marker-suffix :=
+%suffix (* -t)
+T-marker-lex-rule.
+
+LV-verb-suffix-suffix1 :=
+%suffix (* -aw)
+LV-verb-suffix-lex-rule.
+
+LV-verb-suffix-suffix2 :=
+%suffix (* -am)
+LV-verb-suffix-lex-rule.
+
+LV-verb-suffix-suffix3 :=
+%suffix (* -ən)
+LV-verb-suffix-lex-rule.
+
+LV-verb-suffix-suffix4 :=
+%suffix (* -i)
+LV-verb-suffix-lex-rule.
+
+LV-verb-suffix-suffix5 :=
+%suffix (* -e)
+LV-verb-suffix-lex-rule.
+
+LV-verb-suffix-suffix6 :=
+%suffix (* -at)
+LV-verb-suffix-lex-rule.
+
+LV-verb-suffix-suffix8 :=
+%suffix (* -α)
+LV-verb-suffix-lex-rule.
+
+LV-verb-suffix-suffix9 :=
+%suffix (* -əm)
+LV-verb-suffix-lex-rule.
+
+LV-verb-suffix-suffix10 :=
+%suffix (* -le)
+LV-verb-suffix-lex-rule.
+
+;;;SUBJECT AGREEMENT LVs
+LV-NA-verb-suffix1 :=
+%suffix (* -i)
+LV-NI-verb-suffix-lex-rule.
+
+LV-NA-verb-suffix2 :=
+%suffix (* -en)
+LV-NA-verb-suffix-lex-rule.
+
+LV-2-verb-suffix :=
+%suffix (* -əl)
+LV-2-verb-suffix-lex-rule.
+
+INV-suffix :=
+%suffix (* -əkʷ)
+INV-lex-rule.
+
+DIR-suffix :=
+%suffix (* -α)
+DIR-lex-rule.
+
+RP-verb-suffix-suffix1 :=
+%suffix (* -o)
+RP-verb-suffix-lex-rule.
+
+RP-verb-suffix-suffix2 :=
+%suffix (* -l)
+RP-verb-suffix-lex-rule.
+
+RP-verb-suffix-suffix3 :=
+%suffix (* -m)
+RP-verb-suffix-lex-rule.
+
+RP-verb-suffix-suffix4 :=
+%suffix (* -º)
+RP-verb-suffix-lex-rule.
+
+RP-verb-suffix-suffix5 :=
+%suffix (* -aw)
+RP-verb-suffix-lex-rule.
+
+RP-verb-suffix-suffix6 :=
+%suffix (* -am)
+RP-verb-suffix-lex-rule.
+
+;;;Adverbial morphemes (by_GenInstr, etc.)
+adverb-verb-suffix-suffix1 :=
+%suffix (* -ah)
+adverb-verb-suffix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_by-GenInstr_a_rel" ].
+
+adverb-verb-suffix-suffix2 :=
+%suffix (* -ən)
+adverb-verb-suffix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_by-hand_a_rel" ].
+
+adverb-verb-suffix-suffix3 :=
+%suffix (* -m)
+adverb-verb-suffix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_by-voice_a_rel" ].
+
+adverb-verb-suffix-suffix4 :=
+%suffix (* -am)
+adverb-verb-suffix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_by-mouth_a_rel" ].
+
+adverb-verb-suffix-suffix5 :=
+%suffix (* -əs)
+adverb-verb-suffix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_by-heat_a_rel" ].
+
+adverb-verb-suffix-suffix6 :=
+%suffix (* -əhk)
+adverb-verb-suffix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_by-body_a_rel" ].
+
+adverb-verb-suffix-suffix7 :=
+%suffix (* -əsk)
+adverb-verb-suffix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_by-kicking_a_rel" ].
+
+adverb-verb-suffix-suffix8 :=
+%suffix (* -əl)
+adverb-verb-suffix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_by-projectile_a_rel" ].
+
+;;;Adjective predicate marker
+
+adj-predicate-lex-rule :=
+%suffix (* -k)
+adj-predicate-lex-rule.
+
+;;;Adjectival Affixes (for nouns)
+
+bad-adj-lex-rule :=
+%prefix (* mat-)
+adj-prefix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_bad_a_rel" ].
+
+good-adj-lex-rule :=
+%prefix (* wəl-)
+adj-prefix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_good_a_rel" ].
+
+red-adj-lex-rule :=
+%prefix (* məhkʷ-)
+adj-prefix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_red_a_rel" ].
+
+white-adj-lex-rule :=
+%prefix (* wαp-)
+adj-prefix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_white_a_rel" ].
+
+black-adj-lex-rule :=
+%prefix (* məhkasew-)
+adj-prefix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_black_a_rel" ].
+
+strange-adj-lex-rule :=
+%prefix (* mαlh-)
+adj-prefix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_strange_a_rel" ].
+
+dark-adj-lex-rule :=
+%prefix (* pəsək-)
+adj-prefix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_dark_a_rel" ].
+
+hungry-adj-lex-rule :=
+%prefix (* mič-)
+adj-prefix-lex-rule &
+[ C-CONT.RELS.LIST.FIRST.PRED "_hungry_a_rel" ].
+
+;;;Adverb affixes
+
+adverbial-modifier-lex-rule :=
+%suffix (* -iwi)
+adverbializer-suffix-lex-rule.
+
+;;;Incorporation
+
+incorporation-suffix-lex-rule :=
+%suffix (* -əhk)
+incorporation-lex-rule.

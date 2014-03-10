@@ -1,0 +1,374 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Nouns
+
+kawəss := animate-noun-noun-lex &
+  [ STEM < "kawəss" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_mother_n_rel" ].
+
+kʷαkʷ := animate-noun-noun-lex &
+  [ STEM < "kʷαkʷ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fox_n_rel" ].
+
+phenəmº := animate-noun-noun-lex &
+  [ STEM < "phenəmº" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_woman_n_rel" ].
+
+αpe := animate-noun-noun-lex &
+  [ STEM < "αpe" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_man_n_rel" ].
+
+em := animate-noun-noun-lex &
+  [ STEM < "em" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
+
+wəskino := animate-noun-noun-lex &
+  [ STEM < "wəskino" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_boy_n_rel" ].
+
+enikʷ := animate-noun-noun-lex &
+  [ STEM < "enikʷ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ant_n_rel" ].
+
+nolke := animate-noun-noun-lex &
+  [ STEM < "nolke" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_deer_n_rel" ].
+
+skok := animate-noun-noun-lex &
+  [ STEM < "skok" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_snake_n_rel" ].
+
+wikəwαm := inanimate-noun-noun-lex &
+  [ STEM < "wikəwαm" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_house_n_rel" ].
+
+nəpison := inanimate-noun-noun-lex &
+  [ STEM < "nəpison" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_medicine_n_rel" ].
+
+skʷəte := inanimate-noun-noun-lex &
+  [ STEM < "skʷəte" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fire_n_rel" ].
+
+sαkəmα := inanimate-noun-noun-lex &
+  [ STEM < "sαkəmα" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chief_n_rel" ].
+
+təm-αhkʷ-e-ewe := inanimate-noun-noun-lex &
+  [ STEM < "təm-αhkʷ-e-ewe" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_beaver-pelts_n_rel" ].
+
+təm-αhkʷ := animate-noun-noun-lex &
+  [ STEM < "təm-αhkʷ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_beaver_n_rel" ].
+
+αhkʷ := inanimate-noun-noun-lex &
+  [ STEM < "αhkʷ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_wood_n_rel" ].
+
+əhtəkʷ := inanimate-noun-noun-lex &
+  [ STEM < "əhtəkʷ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_river_n_rel" ].
+
+αhpəsk := inanimate-noun-noun-lex &
+  [ STEM < "αhpəsk" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_rock_n_rel" ].
+
+məkʷasəpem := inanimate-noun-noun-lex &
+  [ STEM < "məkʷasəpem" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lake_n_rel" ].
+
+nəyona := 1ple-pronoun-noun-lex &
+  [ STEM < "nəyona" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+nəya := 1sg-pronoun-noun-lex &
+  [ STEM < "nəya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+ahsəm := animate-noun-noun-lex &
+  [ STEM < "ahsəm" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
+
+pəsəwis := animate-noun-noun-lex &
+  [ STEM < "pəsəwis" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cat_n_rel" ].
+
+ess := animate-noun-noun-lex &
+  [ STEM < "ess" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_clam_n_rel" ].
+
+kekʷ := noun-lex &
+  [ STEM < "kekʷ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_what_n_rel" ].
+
+kekʷəss := noun-lex &
+  [ STEM < "kekʷəss" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_what_n_rel" ].
+
+kətak := noun-lex &
+  [ STEM < "kətak" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_other_n_rel" ].
+
+mətehsαn := animate-noun-noun-lex &
+  [ STEM < "mətehsαn" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_youngest-child_n_rel" ].
+
+təp := inanimate-noun-noun-lex &
+  [ STEM < "təp" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_head_n_rel" ].
+
+αliyak := inanimate-noun-noun-lex &
+  [ STEM < "αliyak" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_snow_n_rel" ].
+
+esαpəkʷe := inanimate-noun-noun-lex &
+  [ STEM < "esαpəkʷe" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_glass_n_rel" ].
+
+αto := inanimate-noun-noun-lex &
+  [ STEM < "αto" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_news_n_rel" ].
+
+wək := inanimate-noun-noun-lex &
+  [ STEM < "wək" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bark_n_rel" ].
+
+ol := inanimate-noun-noun-lex &
+  [ STEM < "ol" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_boat_n_rel" ].
+
+;FOR MMT
+ol := inanimate-noun-noun-lex &
+  [ STEM < "ol" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_car_n_rel" ].
+
+;;; Verbs
+
+ahs := basic-trans-verb-lex &
+  [ STEM < "ahs" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_feed_v_rel" ].
+
+akʷan-αliyak := basic-trans-verb-lex &
+  [ STEM < "akʷan-αliyak" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cover-with-snow_v_rel" ].
+
+alohk := basic-trans-verb-lex &
+  [ STEM < "alohk" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_work_v_rel" ].
+
+təhα := embedding-verb-lex &
+  [ STEM < "təhα" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
+
+nam := embedding-verb-lex &
+  [ STEM < "nam" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+
+ih := basic-trans-verb-lex &
+  [ STEM < "ih" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tell_v_rel" ].
+
+ih-embed := embedding-verb-lex &
+  [ STEM < "ih" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tell_v_rel" ].
+
+kəmot := basic-trans-verb-lex &
+  [ STEM < "kəmot" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_steal_v_rel" ].
+
+kəmot-ditrans := basic-ditrans-verb-lex &
+  [ STEM < "kəmot" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_steal_v_rel" ].
+
+man-ess := basic-trans-verb-lex &
+  [ STEM < "man-ess" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_removed-clam_v_rel" ].
+
+man := basic-trans-verb-lex &
+  [ STEM < "man" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_removed_v_rel" ].
+
+mohs-αč := basic-trans-verb-lex &
+  [ STEM < "mohs-αč" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_love_v_rel" ].
+
+αč := basic-trans-verb-lex &
+  [ STEM < "αč" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_feel_v_rel" ].
+
+nəh := basic-trans-verb-lex &
+  [ STEM < "nəh" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_kill_v_rel" ].
+
+tehs-kαpaw := basic-trans-verb-lex &
+  [ STEM < "tehs-kαpaw" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_atop-stand_v_rel" ].
+
+kαpaw := basic-trans-verb-lex &
+  [ STEM < "kαpaw" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_stand_v_rel" ].
+
+ap := basic-intrans-verb-lex &
+  [ STEM < "ap" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
+
+ak := basic-trans-verb-lex &
+  [ STEM < "ak" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_count_v_rel" ].
+
+akehk := basic-trans-verb-lex &
+  [ STEM < "akehk" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_teach_v_rel" ].
+
+hl := basic-intrans-verb-lex &
+  [ STEM < "hl" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_move_v_rel" ].
+
+i := basic-trans-verb-lex &
+  [ STEM < "i" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
+
+i-embed := embedding-verb-lex &
+  [ STEM < "i" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
+
+lαkʷ-əhk := basic-intrans-verb-lex &
+  [ STEM < "lαkʷ-əhk" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cook_v_rel" ].
+
+m := basic-ditrans-verb-lex &
+  [ STEM < "m" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
+
+manaw := basic-trans-verb-lex &
+  [ STEM < "manaw" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_buy_v_rel" ].
+
+nαhs := basic-trans-verb-lex &
+  [ STEM < "nαhs" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_stick_v_rel" ].
+
+pet-ohs := basic-intrans-verb-lex &
+  [ STEM < "pet-ohs" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_return_v_rel" ].
+
+pehsoč := basic-intrans-verb-lex &
+  [ STEM < "pehsoč" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_reside_v_rel" ].
+
+pəkihk := basic-trans-verb-lex &
+  [ STEM < "pəkihk" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bake_v_rel" ].
+
+αp := basic-trans-verb-lex &
+  [ STEM < "αp" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
+
+hpən := basic-trans-verb-lex &
+  [ STEM < "hpən" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hurt_v_rel" ].
+
+mič := basic-trans-verb-lex &
+  [ STEM < "mič" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
+
+kaw := basic-intrans-verb-lex &
+  [ STEM < "kaw" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
+
+nohsaw := basic-trans-verb-lex &
+  [ STEM < "nohsaw" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_follow_v_rel" ].
+
+;FOR MMT
+nohsaw-əhk := basic-trans-verb-lex &
+  [ STEM < "nohsaw-əhk" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chase_v_rel" ].
+
+;;; Determiners
+;; Original determiner PRED path: SYNSEM.LKEYS.KEYREL.PRED "_exist_q_rel"
+;; This PRED constraint is now constrained on the determiner-lex-super type
+
+owa := thisNA-determiner-lex &
+  [ STEM < "owa" > ,
+    SYNSEM.LKEYS.ALTKEYREL.PRED proximal+dem_a_rel].
+
+wa := thisNA-determiner-lex &
+  [ STEM < "wa" >  ,
+    SYNSEM.LKEYS.ALTKEYREL.PRED proximal+dem_a_rel].
+
+iyo := thisNI-determiner-lex &
+  [ STEM < "iyo" > ,
+    SYNSEM.LKEYS.ALTKEYREL.PRED proximal+dem_a_rel].
+
+na := thatNA-determiner-lex &
+  [ STEM < "na" > ,
+    SYNSEM.LKEYS.ALTKEYREL.PRED distal+dem_a_rel].
+
+iyok := thatNApl-determiner-lex &
+  [ STEM < "iyok" > ,
+    SYNSEM.LKEYS.ALTKEYREL.PRED distal+dem_a_rel].
+
+ni := thatNI-determiner-lex &
+  [ STEM < "ni" > ,
+    SYNSEM.LKEYS.ALTKEYREL.PRED distal+dem_a_rel].
+
+iyol := thisobv-determiner-lex &
+  [ STEM < "iyol" > ].
+;;"this" obv seems weird...
+
+yohi := thisobvpl-determiner-lex &
+  [ STEM < "yohi" > ].
+;;"this" obv seems weird...
+
+;;; Modifiers of expressing information structure
+
+%3Dka-marker := focus-or-topic-marking-mod-lex &
+  [ STEM < "=ka" > ].
+
+;;; Modifiers of expressing information structure
+
+%3Daskwe-marker := contrast-focus-marking-mod-lex &
+  [ STEM < "=askwe" > ].
+
+αta := neg-adv-lex &
+  [ STEM < "αta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_neg_r_rel" ].
+
+;;; Adverbs
+nap := adverb-lex &
+  [ STEM < "nap" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel" ].
+
+;;;Adjectives
+bad := adj-lex &
+  [ STEM < "mat" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bad_a_rel" ].
+
+good := adj-lex &
+  [ STEM < "wəl" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_good_a_rel" ].
+
+red := adj-lex &
+  [ STEM < "məhkʷ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_red_a_rel" ].
+
+white := adj-lex &
+  [ STEM < "wαp" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_white_a_rel" ].
+
+black := adj-lex &
+  [ STEM < "məhkasew" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_black_a_rel" ].
+
+strange := adj-lex &
+  [ STEM < "mαlh" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_strange_a_rel" ].
+
+dark := adj-lex &
+  [ STEM < "pəsək" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dark_a_rel" ].
+
+alən := adj-lex &
+  [ STEM < "alən" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_common_a_rel" ].

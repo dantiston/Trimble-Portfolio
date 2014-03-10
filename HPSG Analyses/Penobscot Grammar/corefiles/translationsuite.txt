@@ -1,0 +1,12 @@
+q	g	pəsəwisak wənóhsohkawα emak	pəsəwis-ak wə-nohsaw-əhk-aw-α-w em-ak	cat-NApl 3-follow-by_body-RP-DIR-W dog-NApl	cats chase dogs(?)	author: based on CQ 78	author	f
+wo	g	emak wənóhsohkawα olak	em-ak wə-nohsaw-əhk-aw-α-w ol-ak	dog-NApl 3-follow-by_body-RP-DIR-W boat-NApl	dogs chase boats	author: based on CQ 78	author	f
+adv	g	napiwi emak mìčαn	nap-iwi em-ak mič-α-əne	quickly-IWI dog-NApl eat-DIR-N	dogs eat quickly	author: based on CQ 128, CQ 194	author	f
+wo	g	emak mìčαn	em-ak mič-α-əne	dog-NApl eat-DIR-N	dogs eat	author: based on CQ 128	author	f
+wo	g	emak kawo	em-ak kaw-i-w	dog-NApl sleep-LVᴺᴬ-W	dogs sleep	author: based on ABS 3	author	f
+adj	g	?mičemak mìčαn	mič-em-ak mič-α-əne	hungry-dog-NApl eat-DIR-N	hungry dogs eat	author: based on CQ 128	author	f
+m	g	nəkísimičin esαpəkʷe	nə-kis-mič-əne esαpəkʷe	1-able-eat-N glass	I can eat glass	author: based on CQ 128	author	f
+wo	g	nənóhsohkawα	nə-nohsaw-əhk-aw-α-w	1-follow-by_body-RP.DIR-W	I follow NA	CQ 78	a	s
+neg	g	αta nəhpəneakəkwina	αta nə-hpən-e-əkʷ-w-w	not 1-hurt-LVᴺᴵ-INV-NEG-W	It doesn't hurt me	author: based on CQ 113, 209	author	f
+wo	g	mičemete	mič-em-e-w	hungry-dog-LVᴺᴬ-W	the dogs are hungry	author: based on CQ 29, CQ 128	author	f
+wo	g	emak nənóhsohkawα olak	em-ak wə-nohsaw-əhk-aw-α-w ol-ak	cat-NApl 3-follow-by_body-RP-DIR-W dog-NApl	dogs chase boats	author: based on CQ 78	author	f
+cogst	g	owa emak kawo	owa em-ak kaw-i-w	thisNA dog-NApl sleep-LVᴺᴬ-W	these dogs sleep	author: based on ABS 3	author	f

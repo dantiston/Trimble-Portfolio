@@ -1,0 +1,1108 @@
+Language: Penobscot
+Language code: aaq-pen
+Lines: orth orth-seg gloss translat
+Author: Melanie Bolla and T.J. Trimble
+Date: 05-17-2013
+Source a: Quinn, Conor. Referential-Access Dependency in Penobscot. 2006. http://www.conormquinn.com/CQuinn2006Referential-AccessDependencyInPenobscot.pdf
+Source b: Quinn, Conor. A Preliminary Survey of the Evidential and Information-Structural Properties of Some Algonquian Discourse Particles. 2010. http://www.conormquinn.com/cmquinn2010PrelimSurveyAlgDiscourseParticles.pdf
+
+#1 CQ 29
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: adj
+mkʷìhtəkʷe
+məhkʷ-əhtəkʷ-e-w
+red-river-LVᴺᴵ-W
+NI is a red river
+
+#2 CQ 29
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: adj
+mkʷàhpske
+məhkʷ-αhpəsk-e-w
+red-rock-LVᴺᴵ-W
+NI is a red rock
+
+#3 author: based on CQ 29
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adj
+mkaséwαhpske
+məhkasew-αhpəsk-e-w
+black-rock-LVᴺᴵ-W
+NI is a black rock
+
+#4 author: based on CQ 137, CQ 173
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adj
+wətihlαw màtahsəm
+wə-ih-l-α-əne mat-ahsəm
+3-tell-RP-DIR-N bad-dog
+Prox told the bad dog
+
+#5 author: based on CQ 42
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adj
+nəmílαnal nəmàtahsəmal
+nə-m-l-α-əne-al nə-mat-ahsəm-al
+1-give-RP-DIR-N-obv 1-bad-dog-obv
+I give NA my bad dog
+
+#6 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adj
+wəníhləkon màtahsəm
+wə-nəh-l-əkʷ-əne mat-ahsəm
+3-kill-RP-INV-N bad-dog
+the bad dog kills him
+
+#7 author: based on CQ 42
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adj
+nəmátimilαnal nətémisal
+nə-mat-m-l-α-əne-al nə-em-s-al
+1-bad-give-RP-DIR-N-obv 1-dog-DIM-obv
+I give NA my bad dog
+
+#8 author: based on CQ 29
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adj
+ihtékʷəmkʷe
+əhtəkʷ-məhkʷ-e-w
+river-red-LVᴺᴵ-W
+NI is a red river
+
+#9 CQ 31
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: adj, cop
+mkaséwiko
+məhkasew-k-i-w
+black-have_form-LVᴺᴬ-W
+NA is black
+
+#10 CQ 31
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: adj, cop
+mkaséwikən
+məhkasew-k-ən-w
+black-have_form-LVᴺᴵ-W
+NI is black
+
+#11 author: based on CQ 31
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adj, cop
+mkʷìkən
+məhkʷ-k-ən-w
+red-have_form-LVᴺᴵ-W
+NI is red
+
+#12 author: based on CQ 31
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adj, cop
+wαpìkən
+wαp-k-ən-w
+white-have_form-LVᴺᴵ-W
+NI is white
+
+#13 author: based on CQ 31
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adj, cop
+mkʷən
+məhkʷ-ən-w
+red-LVᴺᴵ-W
+NI is red
+
+#14 author: based on CQ 31
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adj, cop
+wαpən
+wαp-ən-w
+white-LVᴺᴵ-W
+NI is white
+
+#15 author: based on CQ 31
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adj, cop
+mkaséwito
+məhkasew-i-w
+black-LVᴺᴬ-W
+NA is black
+
+#16 author: based on CQ 31
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adj, cop
+mkaséwitən
+məhkasew-ən-w
+black-LVᴺᴵ-W
+NI is black
+
+#17 CQ 194
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: adv
+nápič nəpečohse
+nap-iwi=č nə-pet-ohs-e-əp
+quick-IWI=FUT 1-arrive-walk-DOᴺᴬ-P
+Soon I shall return
+
+#18 author: based on CQ 194, 275
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adv
+nápič nólαpamα
+nap-iwi=č nə-wəl-αp-am-α-əp
+quick-IWI=FUT 1-good-look-RP-DIR-P
+Soon I shall see NA plainly
+
+#19 author: based on CQ 194, 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adv
+nápič kəníhlαwone
+nap-iwi=č kə-nəh-l-α-əne
+quick-IWI=FUT 2-kill-RP-DIR-N
+Soon I shall kill you
+
+#20 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adv
+nápič kəníhləkonal nəpísonal
+nap-iwi=č kə-nəh-l-əkʷ-əne-al nəpison-al
+quick-IWI=FUT 2-kill-RP-INV-N-NIpl medicine-NIpl
+the medicines kill you quickly
+
+#21 CQ 273
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: adv
+napi-pəsəkαpáməkʷe
+nap-pəsək-αp-am-əkʷ-e-w
+quick-dark-look-RP-INV-LVᴺᴵ-W
+NI gets dark quickly; the darkness descends quickly
+
+#22 author: based on CQ 69
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adv
+nənapipəkíhkəsəmən
+nə-nap-pəkihk-əs-əm-əne
+1-quick-scorched-by_heat-LVᴺᴬ-N
+I bake NI quickly
+
+#23 ISP 10
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: adv
+ὰlaw=əka iyo ìpi pehsočíwəss wìkəya, kènok ὰta kekʷ álewi
+αlaw=əka iyo ip-iwi pehsoč-iwi-əhs e-wik-e-ya kenok αta kekʷ a-le-w-w
+although=BR thisNI only-IWI near-IWI-AFF C-reside-LVᴺᴵ-1sCj but not what way-LVᴺᴵ-NEG-W
+Although I live at only a short distance, nevertheless it doesn't make any difference
+
+#24 author: based on CQ 194
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adv
+nápi nəpečohse
+nap-iwi nə-pet-ohs-e-əp
+quick-IWI 1-arrive-walk-DOᴺᴬ-P
+I return quickly
+
+#25 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adv
+kəníhləkonal nəpísonal nápič
+kə-nəh-l-əkʷ-əne-al nəpison-al nap-iwi=č
+2-kill-RP-INV-N-NIpl medicine-NIpl quick-IWI=FUT
+the medicines kill you quickly
+
+#26 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adv
+kəníhləkonal nápič nəpísonal
+kə-nəh-l-əkʷ-əne-al nap-iwi=č nəpison-al
+2-kill-RP-INV-N-NIpl quick-IWI=FUT medicine-NIpl
+the medicines kill you quickly
+
+#27 author: based on CQ 194
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adv
+náp nəpečohse
+nap nə-pet-ohs-e-əp
+quick 1-arrive-walk-DOᴺᴬ-P
+I return quickly
+
+#28 CQ 65
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: agr
+nətákimα
+nə-ak-m-α-w
+1-count-by_voice-DIR-W
+I count NA; I read NA (NA's intentions, ideas)
+
+#29 CQ 66
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: agr
+nətakéhkimα
+nə-akehk-m-α-w
+1-teach-by_voice-DIR-W
+I instruct NA, teach NA
+
+#30 author: based on CQ 66
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: agr
+wətákimα
+wə-ak-m-α-w
+3-count-by_voice-DIR-W
+You count NA; you read NA (NA's intentions, ideas)
+
+#31 author: based on CQ 66
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: agr
+wətakéhkimα
+wə-akehk-m-α-w
+3-teach-by_voice-DIR-W
+You instruct NA, you teach NA
+
+#32 CQ 69
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: agr
+nəpəkíhkəsəmən
+nə-pəkihk-əs-əm-əne
+1-scorched-by_heat-LVᴺᴬ-N
+I scorch NI, bake NI'
+
+#33 author: based on CQ 174
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: agr
+owa wètihlαn wikawəss
+owa wə-ih-l-α-əne wi-kawəss
+thisNA 3-tell-RP-DIR-N 3-mother
+NA told his/her mother
+
+#34 ISP 2
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: emb-d
+owa sὰkəmα wə̀tihlαn nə̀=pa kiselətamólαne kəmάčehlαn kətaskami-mάčehlαn
+owa sαkəmα wə-ih-l-α-əne nə=pa kə-ələ-hl-α-əne kə-ələ-mαče-hl-α-əne kisi-təh-t-aw-əl-əl-α-ne
+thisNA chief 3-tell-RP-DIR-N LNK=CND 2-away-move-LVᴺᴬ-N 2-forever-away-move-LVᴺᴬ-N PERF-feel-T-LVᴺᴬ-for-LV2-1sCj-ABSNI
+The chief told him, "If I should decide to permit you to leave, you are to depart permanently."'
+
+#35 author: based CQ 196
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: emb-d
+owa kʷὰkʷsəss wètihlαn owa skok àpo
+owa kʷαkʷ-əhs wə-ih-l-α-əne owa skok ap-i-w
+thisNA fox-AFF 3-tell-RP-DIR-N thisNA snake sit-LVᴺᴬ-W
+the fox said the snake sits
+
+#36 ISP 11
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: emb-d, info
+owa=ὰskʷe mə̀tehsαn ìtam àhtαmα kənihlάwiwα
+owa=αskʷe mətehsαn i-t-am-w ahtαmα kə-nəh-α-w-w-əwαw
+thisNA=TS youngest_child say-T-LVᴺᴬ-W not 2-kill-DIR-NEG-W-≠1pl
+However, the young child says you are not to kill him
+
+#37 author: based on ISP 10
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: info
+ὰlaw=əka iyo ìpi pehsočíwəss wìkəya
+αlaw=əka iyo ip-iwi pehsoč-iwi-əhs e-wik-e-ya
+although=BR thisNI only-IWI near-IWI-AFF C-reside-LVᴺᴵ-1sCj
+However I live only a short distance away
+
+#38 ISP 11
+Source: b
+Vetted: s
+Judgement: g
+Phenomena: info
+ὰskʷe iyok ὰnəkʷəč kə̀takik wətatəlαkʷαkkʷáhətinα
+αskʷe iyo-ak αnəkwəč kətak-ak wə-tatə-lαkʷ-əhk-α-hət-i-əne-əwαw
+TS thisNA-NApl some other-NApl 3-evening-cook-make-LVᴺᴬ-ExtPl-LVᴺᴬ-N-≠1pl
+on the other hand some of the others cooked the evening meal
+
+#39 author: based on ISP 10
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: info
+ὰlaw iyo ìpi pehsočíwəss wìkəya=əka
+αlaw iyo ip-iwi pehsoč-iwi-əhs e-wik-e-ya=əka
+although thisNI only-IWI near-IWI-AFF C-reside-LVᴺᴵ-1sCj=BR
+However I live only a short distance away
+
+#40 author: based on CQ 194
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: info, adv
+nápič=ὰskʷe nəpečohse
+nap-iwi=č=αskʷe nə-pet-ohs-e-əp
+quick-IWI=FUT=TS 1-arrive-walk-DOᴺᴬ-P
+I will return sooner (rather than later)
+
+#41 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: neg
+αta kəníhləkwonal nəpísonal
+αta kə-nəh-l-əkʷ-w-əne-al nəpison-al
+not 2-kill-RP-INV-NEG-N-NIpl medicine-NIpl
+the medicine does not kill you
+
+#42 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: neg
+αta kəníhləkwon nə̀pison
+αta kə-nəh-l-əkʷ-w-əne nəpison
+not 2-kill-RP-INV-NEG-N medicine
+the medicine does not kill you
+
+#43 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: neg
+αta wəníhləkwonal nəpísonal
+αta wə-nəh-l-əkʷ-w-əne-al nəpison-al
+not 3-kill-RP-INV-NEG-N-NIpl medicine-NIpl
+the medicines does not kill him
+
+#44 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: neg
+αta wəníhləkwon nə̀pison
+αta wə-nəh-l-əkʷ-w-əne nəpison
+not 3-kill-RP-INV-NEG-N medicine
+the medicine does not kills him
+
+#45 author: based on CQ 42
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: neg
+αta nəmílαwinal nətémisal
+αta nə-m-l-α-w-əne-al nə-em-s-al
+not 1-give-RP-DIR-NEG-N-obv 1-dog-DIM-obv
+I did not give NA my dog
+
+#46 author: based on CQ 72
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: neg
+αta álohkewin
+αta alohk-e-w-w
+not work-DOᴺᴬ-NEG-W
+NA does not work
+
+#47 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: neg
+αta kəníhləkonal nəpísonal
+αta kə-nəh-l-əkʷ-w-əne-al nəpison-al
+not 2-kill-RP-INV-NEG-N-NIpl medicine-NIpl
+the medicine does not kill you
+
+#48 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: neg
+αta kəníhləkon nə̀pison
+αta kə-nəh-l-əkʷ-w-əne nəpison
+not 2-kill-RP-INV-NEG-N medicine
+the medicine does not kill you
+
+#49 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: neg
+αta wəníhləkonal nəpísonal
+αta wə-nəh-l-əkʷ-w-əne-al nəpison-al
+not 3-kill-RP-INV-NEG-N-NIpl medicine-NIpl
+the medicines does not kill him
+
+#50 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: neg
+αta wəníhləkon nə̀pison
+αta wə-nəh-l-əkʷ-w-əne nəpison
+not 3-kill-RP-INV-NEG-N medicine
+the medicine does not kills him
+
+#51 author: based on CQ 42
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: neg
+αta nəmílαwinal nətémisal
+αta nə-m-l-α-w-əne-al nə-em-s-al
+not 1-give-RP-DIR-NEG-N-obv 1-dog-DIM-obv
+I did not give NA my dog
+
+#52 CQ 202
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: neg, pn, wo, agr
+αta nəyona nəmohsαčiwənewinawak piləwi-alənαpak
+αta nəyona nə-mohs-αč-i-w-əne-w-w-ənaw-ak piləw-alən-αpe-ak
+not 1ple 1-love-feel-LVᴺᴬ-NEG-N-NEG-W-1pl-NApl strange-common-man-NApl
+We do not love you strange people
+
+#53 CQ 196
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: neg, tam, info
+ὰtakatteč kèkʷəss kkisi-alihάwina
+αta=ka=tte=č kekʷəss kə-kis-əl-h-o-α-w-w-ənaw
+not=FOC=INT=FUT what 2-able-Xmanner-cause-RP-DIR-NEG-W-1pl
+there is nothing at all we can do with him
+
+#54 CQ 196
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: pn, agr
+àpo
+ap-i-w
+sit-LVᴺᴬ-W
+NA sits
+
+#55 CQ 196
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: pn, agr
+nə́tapi
+nə-ap-i-əp
+1-sit-LVᴺᴬ-P
+I sit
+
+#56 CQ 46
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: pn, agr
+mánesse
+man-ess-e-w
+removed-clam-DOᴺᴬ-W
+NA gathers clams/shellfish'
+
+#57 CQ 65
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: pn, agr
+nókihke
+nə-wək-əhk-e-əp
+1-bark-make-DOᴺᴬ-P
+I bark howl, chatter, whoop
+
+#58 CQ 72
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: pn, agr
+álohke
+alohk-e-w
+work-DOᴺᴬ-W
+NA works'
+
+#59 CQ 72
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: pn, agr
+nətálohke
+nə-alohk-e-əp
+1-work-DOᴺᴬ-P
+I work'
+
+#60 CQ 173
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: pn, dir
+wətihlαl
+wə-ih-l-α-w-al
+3-tell-RP-DIR-W-obv
+Prox told Obv
+
+#61 CQ 207
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: pn, dir
+wətihləkol
+wə-ih-l-əkʷ-w-al
+3-tell-RP-INV-W-obv
+Obv told Prox
+
+#62 author: based on CQ 71
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pro-d
+wətahsamáwαnal wətémisal
+wə-ahs-am-aw-α-əne-al wə-em-s-al
+3-feed-RP-RP-DIR-N-obv 3-dog-DIM-obv
+Prox feeds the other one's dog
+
+#63 author: based on CQ 71
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pro-d
+wətahsamáwαnal
+wə-ahs-am-aw-α-əne-al
+3-feed-RP-RP-DIR-N-obv
+Prox feeds Obv
+
+#64 author: based on CQ 71
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: pro-d
+wətahsamáwαnal
+wə-ahs-am-aw-α-əne-al
+3-feed-RP-RP-DIR-N-obv
+*Prox feeds the other one's dog
+
+#65 author: based on CQ 46
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pro-d, agr
+na sὰkəmα wəmánesse
+na sαkəmα wə-man-ess-e-w
+thatᴺᴬ chief 3-removed-clam-DOᴺᴬ-W
+The chief gathers clams/shellfish
+
+#66 author: based on CQ 46
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: pro-d, agr
+na sὰkəmα mánesse
+na sαkəmα man-ess-e-w
+thatᴺᴬ chief removed-clam-DOᴺᴬ-W
+*The chief gathers clams/shellfish
+
+#67 author: based on CQ 196
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: q
+owa skók àpo
+owa skok ap-i-w
+thisNA snake sit-LVᴺᴬ-W
+this snake sits(?)
+
+#68 author: based on CQ 42
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: tam
+nəkisílαnal nətémisal
+nə-kisi-m-l-α-əne-al nə-em-s-al
+1-PERF-give-RP-DIR-N-obv 1-dog-DIM-obv
+I gave NA my dog
+
+#69 CQ 75
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: tam
+mèhč=əp=eht ni kkisi-manohəmáwewin
+mehč=əpa=eht ni kə-kis-manaw-ah-am-aw-e-aw-i-əpəne
+still=POT=UCT thatNI 2-able-buy-by_GenInstr-LVᴺᴬ-RP-?DOᴺᴬ-RP-LV1-PN
+Could you buy me that?
+
+#70 CQ 197
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: tam
+n-wəkisi-nahsahkʷhámənα wə̀təp
+ni=wə-kisi-nαhs-αhkʷ-ah-am-əne-əwαw wə-təp
+then=3-PERF-attached-stick-by_GenInstr-LVᴺᴬ-N-≠1pl 3-head
+They stuck his head up on on a stick
+
+#71 CQ 75
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: tam
+nəkisanohəmáwewαn
+nə-kisi-manaw-ah-am-aw-e-aw-α-əne
+1-PERF-buy-by_GenInstr-LVᴺᴬ-RP-DOᴺᴬ-RP-DIR-N
+I bought it for him (or her).
+
+#72 author: based on CQ 42
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: tam
+kisi nəkisílαnal nətémisal
+kisi nə-m-l-α-əne-al nə-em-s-al
+PERF 1-give-RP-DIR-N-obv 1-dog-DIM-obv
+I gave NA my dog
+
+#73 CQ 207
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: tam, wo
+kkati-mαlhαtohkéwəkona wa énikʷəss
+kə-kat-mαlh-αto-əhk-e-aw-əkʷ-w-ənaw wa enikʷ-əhs
+2-irrealis-strange-tell-make-DOᴺᴬ-RP-INV-W-1pl thisNA ant-AFF
+The Ant is going to tell us strange news
+
+#74 CQ 103
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo
+nətehsíkαpawin iyo
+nə-tehs-kαpaw-i-əne iyo
+1-atop-stand-LVᴺᴬ-N thisNI
+I am standing on this NI
+
+#75 CQ 103
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo
+nətehsíkαpawin owa
+nə-tehs-kαpaw-i-əne owa
+1-atop-stand-LVᴺᴬ-N thisNA
+I am standing on this NA
+
+#76 CQ 179
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo
+owa kʷὰkʷsəss wètihlαn iyol wskínohsal
+owa kʷαkʷ-əhs wə-ih-l-α-əne iyol wəskino-əhs-al
+thisNA fox-AFF 3-tell-RP-DIR-N thisobv boy-AFF-obv
+the fox said to the young man
+
+#77 CQ 180
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo
+owa kʷὰkʷsəss wə́t ihlαn yòhi phènəmo
+owa kʷαkʷ-əhs wə-ih-l-α-əne yohi phenəmº-a
+thisNA fox-AFF 3-tell-RP-DIR-N thisobvpl woman-obvpl
+the fox told the women
+
+#78 CQ 71
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo
+na sὰkəmα wətahsamáwαnal wətémisal
+na sαkəmα wə-ahs-am-aw-α-əne-al wə-em-s-al
+thatᴺᴬ chief 3-feed-?RP-RP-DIR-N-obv 3-dog-DIM-obv
+The chief feeds the other one's dog (S:60:24:#72)
+
+#79 CQ 181
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo
+owa kʷὰkʷsəss wəkisi-kəmotənáməkonα skʷə́te
+owa kʷαkʷ-əhs wə-kisi-kəmot-ən-am-əkʷ-əne-əwαw skʷəte
+thisNA fox-AFF 3-PERF-steal-by_hand-RP-INV-N-≠1NApl fire
+the fox had succeeded in stealing fire from them
+
+#80 CQ 42
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo
+nəmílαnal nətémisal
+nə-m-l-α-əne-al nə-em-s-al
+1-give-RP-DIR-N-obv 1-dog-DIM-obv
+I give NA my dog
+
+#81 author: based on CQ 179
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo
+owa wètihlαn iyol
+owa wə-ih-l-α-əne iyol
+thisNA 3-tell-RP-DIR-N thisobv
+NA told obv
+
+#82 author: based on CQ 103
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo
+iyo nətehsíkαpawin
+iyo nə-tehs-kαpaw-i-əne
+thisNI 1-atop-stand-LVᴺᴬ-N
+I am standing on this NI
+
+#83 author: based on CQ 103
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo
+owa nətehsíkαpawin
+owa nə-tehs-kαpaw-i-əne
+thisNA 1-atop-stand-LVᴺᴬ-N
+I am standing on this NA
+
+#84 author: based on CQ 179
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo
+owa kʷὰkʷsəss iyol wskínohsal wètihlαn
+owa kʷαkʷ-əhs iyol wəskino-əhs-al wə-ih-l-α-əne
+thisNA fox-AFF thisobv boy-AFF-obv 3-tell-RP-DIR-N
+*the fox said to the young man
+
+#85 author: based on CQ 179
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo
+iyol wskínohsal owa kʷὰkʷsəss wètihlαn
+iyol wəskino-əhs-al owa kʷαkʷ-əhs wə-ih-l-α-əne
+thisobv boy-AFF-obv thisNA fox-AFF 3-tell-RP-DIR-N
+*the fox said to the young man
+
+#86 author: based on CQ 179
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo
+iyol wskínohsal wètihlαn owa kʷὰkʷsəss
+iyol wəskino-əhs-al wə-ih-l-α-əne owa kʷαkʷ-əhs
+thisobv boy-AFF-obv 3-tell-RP-DIR-N thisNA fox-AFF
+*the fox said to the young man
+
+#87 author: based on CQ 179
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo
+wètihlαn iyol wskínohsal owa kʷὰkʷsəss
+wə-ih-l-α-əne iyol wəskino-əhs-al owa kʷαkʷ-əhs
+3-tell-RP-DIR-N thisobv boy-AFF-obv thisNA fox-AFF
+*the fox said to the young man
+
+#88 author: based on CQ 179
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo
+wètihlαn owa kʷὰkʷsəss iyol wskínohsal
+wə-ih-l-α-əne owa kʷαkʷ-əhs iyol wəskino-əhs-al
+3-tell-RP-DIR-N thisNA fox-AFF thisobv boy-AFF-obv
+*the fox said to the young man
+
+#89 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: wo, agr
+nəníhləkonal nəpísonal
+nə-nəh-l-əkʷ-əne-al nəpison-al
+1-kill-RP-INV-N-NIpl medicine-NIpl
+the medicines kill me
+
+#90 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: wo, agr
+nəníhləkon nə̀pison
+nə-nəh-l-əkʷ-əne nəpison
+1-kill-RP-INV-N medicine
+the medicine kills me
+
+#91 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: wo, agr
+kəníhləkonal nəpísonal
+kə-nəh-l-əkʷ-əne-al nəpison-al
+2-kill-RP-INV-N-NIpl medicine-NIpl
+the medicines kill you
+
+#92 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: wo, agr
+kəníhləkon nə̀pison
+kə-nəh-l-əkʷ-əne nəpison
+2-kill-RP-INV-N medicine
+the medicine kills you
+
+#93 CQ 113
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo, agr
+wəníhləkonal nəpísonal
+wə-nəh-l-əkʷ-əne-al nəpison-al
+3-kill-RP-INV-N-NIpl medicine-NIpl
+the medicines kill him
+
+#94 CQ 113
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo, agr
+wəníhləkon nə̀pison
+wə-nəh-l-əkʷ-əne nəpison
+3-kill-RP-INV-N medicine
+the medicine kills him
+
+#95 CQ 273
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo, agr
+akʷanαləyákhoke áwikəwαm
+akʷan-αliyak-ah-o-əkʷ-e-w a-wikəwαm
+cover-snow-by_GenInstr-RP-INV-LVᴺᴵ-W 3-house
+NI’s house is covered with snow
+
+#96 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+nəpísonal wəníhləkonal
+nəpison-al wə-nəh-l-əkʷ-əne-al
+medicine-NIpl 3-kill-RP-INV-N-NIpl
+the medicines kill him
+
+#97 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+nə̀pison wəníhləkon
+nəpison wə-nəh-l-əkʷ-əne
+medicine 3-kill-RP-INV-N
+the medicine kills him
+
+#98 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+nəpísonal nəníhləkonal
+nəpison-al nə-nəh-l-əkʷ-əne-al
+medicine-NIpl 1-kill-RP-INV-N-NIpl
+the medicines kill me
+
+#99 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+nə̀pison nəníhləkon
+nəpison nə-nəh-l-əkʷ-əne
+medicine 1-kill-RP-INV-N
+the medicine kills me
+
+#100 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+nəpísonal kəníhləkonal
+nəpison-al kə-nəh-l-əkʷ-əne-al
+medicine-NIpl 2-kill-RP-INV-N-NIpl
+the medicines kill you
+
+#101 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+nə̀pison kəníhləkon
+nəpison kə-nəh-l-əkʷ-əne
+medicine 2-kill-RP-INV-N
+the medicine kills you
+
+#102 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+wəníhləkonal nəpíson
+wə-nəh-l-əkʷ-əne-al nəpison
+3-kill-RP-INV-N-NIpl medicine
+the medicine kill him
+
+#103 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+nəníhləkonal nəpíson
+nə-nəh-l-əkʷ-əne-al nəpison
+1-kill-RP-INV-N-NIpl medicine
+the medicine kill me
+
+#104 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+kəníhləkonal nəpíson
+kə-nəh-l-əkʷ-əne-al nəpison
+2-kill-RP-INV-N-NIpl medicine
+the medicine kill you
+
+#105 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+wəníhləkon nəpísonal
+wə-nəh-l-əkʷ-əne nəpison-al
+3-kill-RP-INV-N medicine-NIpl
+the medicines kills him
+
+#106 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+nəníhləkon nəpísonal
+nə-nəh-l-əkʷ-əne nəpison-al
+1-kill-RP-INV-N medicine-NIpl
+the medicines kills me
+
+#107 author: based on CQ 113
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: wo, agr
+kəníhləkon nəpísonal
+kə-nəh-l-əkʷ-əne nəpison-al
+2-kill-RP-INV-N medicine-NIpl
+the medicines kills you
+
+#108 CQ 250
+Source: a
+Vetted: s
+Judgement: g
+Phenomena: wo, pn
+wəkəmotənəmáwαna təmáhkʷewa
+wə-kəmot-ən-əm-aw-α-əne-a təm-αhkʷ-e-ewe-a
+3-steal-by_hand-LVᴺᴬ-RP-DIR-N-obvpl sever-wood-DOᴺᴬ-pelt-obvpl
+he steals beaver skins from him
+
+#109 author: based on CQ 128
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: m
+nəkísimičin esαpəkʷe
+nə-kis-mič-əne esαpəkʷe
+1-able-eat-N glass
+I can eat glass
+
+#110 author: based on CQ 113, 209
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: neg
+αta nəhpəneakəkwina
+αta nə-hpən-e-əkʷ-w-w
+not 1-hurt-LVᴺᴵ-INV-NEG-W
+It doesn't hurt me
+

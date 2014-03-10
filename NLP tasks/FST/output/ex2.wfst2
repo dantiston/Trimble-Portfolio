@@ -1,0 +1,8 @@
+"they" "can" "fish" 	=> "PRO" "AUX" "VERB" *e* 0.096
+"they" "can" "can" "fish" 	=> "PRO" "AUX" "VERB" "NOUN" 0.28
+"they" "fish" 	=> "PRO" "VERB" *e* 0.04
+"they" "fish" "can" 	=> "PRO" "VERB" "NOUN" 0.01
+"they" "fish" "can" "can" 	=> *none* 0
+"can" "they" "fish" 	=> "AUX" "PRO" "VERB" 0.6
+"can" "fish" 	=> *none* 0
+"they" "fish" 	=> "PRO" "VERB" *e* 0.04

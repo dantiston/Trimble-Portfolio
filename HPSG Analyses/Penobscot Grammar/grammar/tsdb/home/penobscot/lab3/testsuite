@@ -1,0 +1,585 @@
+Language: Penobscot
+Language code: aaq-pen
+Lines: orth orth-seg gloss translat
+Author: Melanie Bolla and T.J. Trimble
+Date: 4-19-13
+Source a: Quinn, Conor. Referential-Access Dependency in Penobscot. 2006. http://www.conormquinn.com/CQuinn2006Referential-AccessDependencyInPenobscot.pdf
+
+#1 author: based on CQ 174
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+owa wètihlαn wikaw3ss
+owa w3-ih-l-α-3ne wi-kaw3ss
+thisNA 3-tell-RP-DIR-N 3-mother
+his/her mother
+
+#2 author: based on CQ 174
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+owa wètihlαn nikaw3ss
+owa w3-ih-l-α-3ne ni-kaw3ss
+thisNA 3-tell-RP-DIR-N 1-mother
+NA told my mother
+
+#3 author: based on CQ 174
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+owa wètihlαn kikaw3ss
+owa w3-ih-l-α-3ne ki-kaw3ss
+thisNA 3-tell-RP-DIR-N 2-mother
+NA told your mother
+
+#4 author: based on CQ 174
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+owa wètihlαn wikaw3ssal
+owa w3-ih-l-α-3ne wi-kaw3ss-al
+thisNA 3-tell-RP-DIR-N 3-mother-obv
+NA told his/her mother
+
+#5 CQ 173
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: pn, dir
+w3tihlαl
+w3-ih-l-α-w-al
+3-tell-RP-DIR-W-obv
+Prox told Obv
+
+#6 CQ 207
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: pn, dir
+w3tihl3kol
+w3-ih-l-3kw-w-al
+3-tell-RP-INV-W-obv
+Obv told Prox
+
+#7 CQ 266
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: imp
+p3lαnsis mile ččik3nal
+p3lαn-3hs-s m-l-e ahčik3ne-al
+Frank-AFF-DIM give-RP-DIR{2sImpr} apple-obv
+Give Frank an apple
+
+#8 CQ 202
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: neg, pn, wo, agr
+w3sαm αta n3yona n3mohsαčiw3newinawak pil3wi-al3nαpak,
+w3sαm αta n3yona n3-mohs-αč-i-w-3ne-w-w-3naw-ak pil3w-al3n-αpe-ak
+because not 1ple 1-love-feel-LVᴺᴬ-NEG-N-NEG-W-1pl-NApl strange-common-man-NApl
+because we do not love you strange people
+
+#9 CQ 196
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: pn, agr
+àpo
+ap-i-w
+sit-LVᴺᴬ-W
+NA sits
+
+#10 CQ 196
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: pn, agr
+nə́tapi
+n3-ap-i-3p
+1-sit-LVᴺᴬ-P
+I sit
+
+#11 CQ 262
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: pn, agr
+etali-katonkáh3tim3k
+e-3tal-katon-3hk-e-hat-i-m3k
+C-Xspace-forage-make-DOᴺᴬ-ExtPl-LVᴺᴬ-ImpsCj
+where one (ExtPl) hunts
+
+#12 CQ 46
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: pn, agr
+mánesse
+man-ess-e-w
+removed-clam-DOᴺᴬ-W
+NA gathers clams/shellfish'
+
+#13 CQ 65
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: pn, agr
+nókihke
+n3-w3k-3hk-e-3p
+1-bark-make-DOᴺᴬ-P
+I bark howl, chatter, whoop--- '
+
+#14 CQ 72
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: pn, agr
+álohke
+alohk-e-w
+work-DOᴺᴬ-W
+NA works'
+
+#15 CQ 72
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: pn, agr
+n3tálohke
+n3-alohk-e-3p
+1-work-DOᴺᴬ-P
+I work
+
+#16 author: based on CQ 103
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+iyo n3tehsíkαpawin
+iyo n3-tehs-kαpaw-i-3ne
+thisNI 1-atop-stand-LVᴺᴬ-N
+*
+
+#17 author: based on CQ 103
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+owa n3tehsíkαpawin
+owa n3-tehs-kαpaw-i-3ne
+thisNA 1-atop-stand-LVᴺᴬ-N
+*
+
+#18 author: based on CQ 179
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+owa kwὰkws3ss iyol wskínohsal wètihlαn
+owa kwαkw-3hs-3hs iyo-al w3skino-3hs-al w3-ih-l-α-3ne
+thisNA fox-AFF-AFF this-obv boy-AFF-obv 3-tell-RP-DIR-N
+*the fox said to the young man
+
+#19 author: based on CQ 179
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+iyol wskínohsal owa kwὰkws3ss wètihlαn
+iyo-al w3skino-3hs-al owa kwαkw-3hs-3hs w3-ih-l-α-3ne
+this-obv boy-AFF-obv thisNA fox-AFF-AFF 3-tell-RP-DIR-N
+*the fox said to the young man
+
+#20 author: based on CQ 179
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+iyol wskínohsal wètihlαn owa kwὰkws3ss
+iyo-al w3skino-3hs-al w3-ih-l-α-3ne owa kwαkw-3hs-3hs
+this-obv boy-AFF-obv 3-tell-RP-DIR-N thisNA fox-AFF-AFF
+*the fox said to the young man
+
+#21 author: based on CQ 179
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+wètihlαn iyol wskínohsal owa kwὰkws3ss
+w3-ih-l-α-3ne iyo-al w3skino-3hs-al owa kwαkw-3hs-3hs
+3-tell-RP-DIR-N this-obv boy-AFF-obv thisNA fox-AFF-AFF
+*the fox said to the young man
+
+#22 author: based on CQ 179
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+wètihlαn owa kwὰkws3ss iyol wskínohsal
+w3-ih-l-α-3ne owa kwαkw-3hs-3hs iyo-al w3skino-3hs-al
+3-tell-RP-DIR-N thisNA fox-AFF-AFF this-obv boy-AFF-obv
+*the fox said to the young man
+
+#23 author: based on CQ 179
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+owa wètihlαn iyol
+owa w3-ih-l-α-3ne iyo-al
+thisNA 3-tell-RP-DIR-N this-obv
+NA tells OBV
+
+#24 CQ 103
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo
+n3tehsíkαpawin iyo
+n3-tehs-kαpaw-i-3ne iyo
+1-atop-stand-LVᴺᴬ-N thisNI
+I am standing on this NI
+
+#25 CQ 103
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo
+n3tehsíkαpawin owa
+n3-tehs-kαpaw-i-3ne owa
+1-atop-stand-LVᴺᴬ-N thisNA
+I am standing on this NA
+
+#26 CQ 179
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo
+owa kwὰkws3ss wètihlαn iyol wskínohsal
+owa kwαkw-3hs-3hs w3-ih-l-α-3ne iyo-l w3skino-3hs-al
+thisNA fox-AFF-AFF 3-tell-RP-DIR-N this-obv boy-AFF-obv
+the fox said to the young man
+
+#27 CQ 180
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo
+owa kwὰkws3ss wə́tihlαn yòhi phèn3mo
+owa kwαkw-3hs-3hs w3-ih-l-α-3ne yohi phen3mº-a
+thisNA fox-AFF-AFF 3-tell-RP-DIR-N thisobvpl woman-obvpl
+the fox told the women
+
+#28 CQ 71
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo
+na sὰk3mα, w3tahsamáwαnal w3témisal-
+na sαk3mα w3-ahs-am-aw-α-3ne-al w3-em-s-al
+thatᴺᴬ chief 3-feed-?RP-RP-DIR-N-obv 3-dog-DIM-obv
+The chief feeds the other one's dog' (S:60:24:#72)
+
+#29 CQ 181
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo
+owa kwὰkws3ss w3kisi-k3mot3nám3konα skwə́te-
+owa kwαkw-3hs-3hs w3-kisi-k3mot-3n-am-3kw-3ne-3wαw skw3te
+thisNA fox-AFF-AFF 3-PERF-steal-by_hand-RP-INV-N-≠1NApl fire
+the fox had succeeded in stealing fire from them
+
+#30 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, agr
+n3níhl3konal n3písonal
+n3-n3h-l-3kw-3ne-al n3pison-al
+1-kill-RP-INV-N-NIpl medicine-NIpl
+the medicines kill me
+
+#31 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, agr
+n3níhl3kon nə̀pison
+n3-n3h-l-3kw-3ne n3pison
+1-kill-RP-INV-N medicine
+the medicine kills me
+
+#32 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, agr
+k3níhl3konal n3písonal
+k3-n3h-l-3kw-3ne-al n3pison-al
+2-kill-RP-INV-N-NIpl medicine-NIpl
+the medicines kill you
+
+#33 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, agr
+k3níhl3kon nə̀pison
+k3-n3h-l-3kw-3ne n3pison
+2-kill-RP-INV-N medicine
+the medicine kills you
+
+#34 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+n3písonal w3níhl3konal
+n3pison-al w3-n3h-l-3kw-3ne-al
+medicine-NIpl 3-kill-RP-INV-N-NIpl
+*
+
+#35 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+nə̀pison w3níhl3kon
+n3pison w3-n3h-l-3kw-3ne
+medicine 3-kill-RP-INV-N
+*
+
+#36 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+n3písonal n3níhl3konal
+n3pison-al n3-n3h-l-3kw-3ne-al
+medicine-NIpl 1-kill-RP-INV-N-NIpl
+*
+
+#37 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+nə̀pison n3níhl3kon
+n3pison n3-n3h-l-3kw-3ne
+medicine 1-kill-RP-INV-N
+*
+
+#37 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+n3písonal k3níhl3konal
+n3pison-al k3-n3h-l-3kw-3ne-al
+medicine-NIpl 2-kill-RP-INV-N-NIpl
+*
+
+#38 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+nə̀pison k3níhl3kon
+n3pison k3-n3h-l-3kw-3ne
+medicine 2-kill-RP-INV-N
+*
+
+#39 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+w3níhl3konal n3píson
+w3-n3h-l-3kw-3ne-al n3pison
+3-kill-RP-INV-N-NIpl medicine
+the medicine kill him
+
+#40 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+n3níhl3konal n3píson
+n3-n3h-l-3kw-3ne-al n3pison
+1-kill-RP-INV-N-NIpl medicine
+the medicine kill me
+
+#41 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+k3níhl3konal n3píson
+k3-n3h-l-3kw-3ne-al n3pison
+2-kill-RP-INV-N-NIpl medicine
+the medicine kill you
+
+#42 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+w3níhl3kon n3písonal
+w3-n3h-l-3kw-3ne n3pison-al
+3-kill-RP-INV-N medicine-NIpl
+the medicines kills him
+
+#43 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+n3níhl3kon n3písonal
+n3-n3h-l-3kw-3ne n3pison-al
+1-kill-RP-INV-N medicine-NIpl
+the medicines kills me
+
+#44 author: based on CQ 113
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+k3níhl3kon n3písonal
+k3-n3h-l-3kw-3ne n3pison-al
+2-kill-RP-INV-N medicine-NIpl
+the medicines kills you
+
+#45 CQ 113
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo, agr
+w3níhl3konal n3písonal
+w3-n3h-l-3kw-3ne-al n3pison-al
+3-kill-RP-INV-N-NIpl medicine-NIpl
+the medicines kill him
+
+#46 CQ 113
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo, agr
+w3níhl3kon nə̀pison
+w3-n3h-l-3kw-3ne n3pison
+3-kill-RP-INV-N medicine
+the medicine kills him
+
+#47 CQ 273
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo, agr
+akwanαl3yákhoke áwik3wαm
+akwan-αliyak-ah-o-3kw-e-w a-wik3wαm
+cover-snow-by_GenInstr-RP-INV-LVᴺᴵ-W 3-house
+His house = NI is covered with snow
+
+#48 CQ 250
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo, pn
+w3k3mot3n3máwαna t3máhkwewa-
+w3-k3mot-3n-3m-aw-α-3ne-a t3m-αhkw-e-ewe-a
+3-theft-by_hand-LVᴺᴬ-RP-DIR-N-obvpl sever-wood-DOᴺᴬ-pelt-obvpl
+he steals beaver skins from him
+
+#49 CQ 207
+Source: d
+Vetted: s
+Judgment: g
+Phenomena: wo, pn, agr
+kkati-mαlhαtohkéw3kona wa énikw3ss
+k3-kat-mαlh-αto-3hk-e-aw-3kw-w-3naw wa enikw-3hs
+2-irrealis-strange-tell-make-DOᴺᴬ-RP-INV-W-1pl thisNA ant-AFF
+The Ant is going to tell us strange news
+
+#50
+agr	g	nətákimα	nə-ak-m-α-w	1-count-by_voice-DIR-W	I count NA; I read NA (NA's intentions, ideas)	CQ 65	d
+
+#51
+agr	g	nətakéhkimα	nə-akehk-m-α-w	1-teach-by_voice-DIR-W	I instruct NA, teach NA	CQ 66	d
+
+#52
+agr	g	wətákimα	wə-ak-m-α-w	3-count-by_voice-DIR-W	I count NA; I read NA (NA's intentions, ideas)	author	author: based on CQ 66
+
+#53
+agr	g	wətakéhkimα	wə-akehk-m-α-w	3-teach-by_voice-DIR-W	I instruct NA, teach NA	author	author: based on CQ 66	
+
+#54
+neg	g	αta kəníhləkwonal nəpísonal	αta kə-nəh-l-əkʷ-w-əne-al nəpison-al	2-kill-RP-INV-NEG-N-NIpl medicine-NIpl	the medicine does not kill you	author	author: based on CQ 113	
+
+#55
+neg	g	αta kəníhləkwon nə̀pison	αta kə-nəh-l-əkʷ-w-əne nəpison	2-kill-RP-INV-NEG-N medicine	the medicine does not kill you	author	author: based on CQ 113	
+
+#56
+neg	g	αta wəníhləkwonal nəpísonal	αta wə-nəh-l-əkʷ-w-əne-al nəpison-al	3-kill-RP-INV-NEG-N-NIpl medicine-NIpl	the medicines does not kill him	author	author: based on CQ 113	
+
+#57
+neg	g	αta wəníhləkwon nə̀pison	αta wə-nəh-l-əkʷ-w-əne nəpison	3-kill-RP-INV-NEG-N medicine	the medicine does not kills him	author	author: based on CQ 113	
+
+#58
+neg	g	αta nəmílαwinal nətémisal	αta nə-m-l-α-w-əne-al nə-em-s-al	not 1-give-RP-DIR-NEG-N-obv 1-dog-DIM-obv	I did not give NA my dog	author	author: based on CQ 42	
+
+#59
+neg	g	αta álohkewin	αta alohk-e-w-w	not work-DOᴺᴬ-NEG-W	NA does not work	author	author: based on CQ 72	
+
+#60
+neg, tam	g	ὰtakatteč kèkʷəss kkisi-alihάwina	αta-ka-tte-č kekʷəss kə-kis-əl-h-o-α-w-w-ənaw	not=FOC=INT=FUT what 2-can-Xmanner-cause-RP-DIR-NEG-W-1pl	there is nothing at all we can do with him	CQ 196	d	s
+
+#61
+pro-d	g	wətahsamáwαnal wətémisal	wə-ahs-am-aw-α-əne-al wə-em-s-al	3-feed-RP-RP-DIR-N-obv 3-dog-DIM-obv	Prox feeds the other one's dog	author	author: based on CQ 71	f
+
+#62
+pro-d	g	wətahsamáwαnal	wə-ahs-am-aw-α-əne-al	3-feed-RP-RP-DIR-N-obv	Prox feeds Obv	author	author: based on CQ 71	f
+
+#63
+pro-d, agr	g	na sὰkəmα wəmánesse	na sαkəmα wə-man-ess-e-w	thatᴺᴬ chief 3-removed-clam-DOᴺᴬ-W	NA gathers clams/shellfish	author	author: based on CQ 46	f
+
+#64
+tam	g	mèhč=əp=eht ni kkisi-manohəmáwewin	mehč-əp-eht ni kə-kis-manaw-ah-am-aw-e-(a)w-i-əpəne	still=POT=UNC thatNI 2-able-buy-by_GenInstr-LVᴺᴬ-RP-?DOᴺᴬ-RP-LV1-PN	Could you buy me that?	CQ 75	d	s
+
+#65
+wo	g	owa kʷὰkʷsəss wètihlαn iyol wskínohsal	owa kʷαkʷ-əhs-əhs wə-ih-l-α-əne iyo-l wəskino-əhs-al	thisNA fox-AFF-AFF 3-tell-RP-DIR-N this-obv boy-AFF-obv	the fox said to the young man	CQ 179	d	s
+
+#66
+wo, agr	g	wəníhləkonal nəpísonal	wə-nəh-l-əkʷ-əne-al nəpison-al	3-kill-RP-INV-N-NIpl medicine-NIpl	the medicines kill him	CQ 113	d	s
+
+#67
+wo, agr	g	wəníhləkon nə̀pison	wə-nəh-l-əkʷ-əne nəpison	3-kill-RP-INV-N medicine	the medicine kills him	CQ 113	d	s
+
+#68
+wo, agr	g	akʷanαləyákhoke áwikəwαm	akʷan-αliyak-ah-o-əkʷ-e-w a-wikəwαm	cover-snow-by_GenInstr-RP-INV-LVᴺᴵ-W 3-house	NI’s house is covered with snow	CQ 273	d	s
+
+#69
+wo, pn	g	wəkəmotənəmáwαna təmáhkʷewa	wə-kəmot-ən-əm-aw-α-əne-a təm-αhkʷ-e-ewe-a	3-theft-by_hand-LVᴺᴬ-RP-DIR-N-obvpl sever-wood-DOᴺᴬ-pelt-obvpl	he steals beaver skins from him	CQ 250	d	s
+
+#70
+neg	u	αta kəníhləkonal nəpísonal	αta kə-nəh-l-əkʷ-əne-al nəpison-al	2-kill-RP-INV-NEG-N-NIpl medicine-NIpl	the medicine does not kill you	author	author: based on CQ 113	f
+
+#71
+neg	u	αta kəníhləkon nə̀pison	αta kə-nəh-l-əkʷ-əne nəpison	2-kill-RP-INV-NEG-N medicine	the medicine does not kill you	author	author: based on CQ 113	f
+
+#72
+neg	u	αta wəníhləkonal nəpísonal	αta wə-nəh-l-əkʷ-əne-al nəpison-al	3-kill-RP-INV-NEG-N-NIpl medicine-NIpl	the medicines does not kill him	author	author: based on CQ 113	f
+
+#73
+neg	u	αta wəníhləkon nə̀pison	αta wə-nəh-l-əkʷ-əne nəpison	3-kill-RP-INV-NEG-N medicine	the medicine does not kills him	author	author: based on CQ 113	f
+
+#74
+neg	u	αta nəmílαwinal nətémisal	αta nə-m-l-α-w-əne-al nə-em-s-al	not 1-give-RP-DIR-NEG-N-obv 1-dog-DIM-obv	I did not give NA my dog	author	author: based on CQ 42	f
+
+#75
+pro-d	u	wətahsamáwαnal	wə-ahs-am-aw-α-əne-al	3-feed-RP-RP-DIR-N-obv	*Prox feeds the other one's dog	author	author: based on CQ 71	f
+
