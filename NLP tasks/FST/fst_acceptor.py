@@ -88,7 +88,7 @@ def read(carmel):
                             else:
                                 FSAtransitions[FSAsource].append((FSAdestination, FSAinput, FSAoutput, '1'))
     if state != final:
-        ValidationException(' '.join(["Invalid transition:", line]))
+        raise ValidationException(' '.join(["Invalid transition:", line]))
     return FSAtransitions
 
 ### This is the recursive algorithm that checks all paths
